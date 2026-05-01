@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Open Gynus</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f3;
+      color: #1f2937;
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: 100%;
+      max-width: 520px;
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      text-align: center;
+    }
+    h1 { margin: 0 0 12px; font-size: 28px; }
+    p { margin: 0 0 16px; line-height: 1.5; }
+    .actions {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 14px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #d1d5db;
+      color: #111827;
+      background: #fff;
+    }
+    a.button.primary {
+      background: #d9f99d;
+      border-color: #bef264;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">Open or install Gynus</h1>
+    <p id="copy">If the app is installed, it should open now. Otherwise you can go to the store.</p>
+
+    <div id="actions" class="actions hidden">
+      <a id="openApp" class="button primary" href="#">Open app</a>
+      <a id="appStore" class="button" href="https://apps.apple.com/app/id6764876378">Open App Store</a>
+      <a id="playStore" class="button" href="https://play.google.com/store/apps/details?id=fit.gynus.app">Open Google Play</a>
+      <a id="home" class="button" href="/">Go to homepage</a>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var path = window.location.pathname.replace(/\/+$/, "");
+      var match = path.match(/^\/join-group\/([A-Za-z0-9]{10,32})$/);
+      var actions = document.getElementById("actions");
+
+      if (!match) {
+        document.getElementById("title").textContent = "Page not found";
+        document.getElementById("copy").textContent = "This page does not exist.";
+        actions.classList.remove("hidden");
+        document.getElementById("openApp").style.display = "none";
+        document.getElementById("appStore").style.display = "none";
+        document.getElementById("playStore").style.display = "none";
+        return;
+      }
+
+      var token = match[1];
+      var schemeUrl = "gynus://join-group/" + token;
+      var appStoreUrl = "https://apps.apple.com/app/id6764876378";
+      var playStoreUrl = "https://play.google.com/store/apps/details?id=fit.gynus.app";
+
+      var ua = navigator.userAgent || "";
+      var isIOS = /iPhone|iPad|iPod/i.test(ua);
+      var isAndroid = /Android/i.test(ua);
+      var storeUrl = isIOS ? appStoreUrl : playStoreUrl;
+
+      document.getElementById("openApp").href = schemeUrl;
+
+      if (!isIOS && !isAndroid) {
+        actions.classList.remove("hidden");
+        return;
+      }
+
+      var fallbackTimer = setTimeout(function () {
+        window.location.href = storeUrl;
+      }, 1200);
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") {
+          clearTimeout(fallbackTimer);
+        }
+      });
+
+      actions.classList.remove("hidden");
+      window.location.href = schemeUrl;
+    })();
+  </script>
+</body>
+</html>
