@@ -12,7 +12,7 @@
       <a class="back-link" href="./index.html">Home</a>
       <section class="panel legal-panel">
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: April 25, 2026</p>
+        <p class="meta">Effective date: May 13, 2026</p>
 
         <p>This Privacy Policy describes how <strong>Gynus</strong> is operated by <strong>Kedson Alves da Silva</strong> ("we," "us," or "our") and how we collect, use, disclose, and protect information when you use the Gynus mobile application and related services.</p>
 
@@ -47,7 +47,16 @@
           <li>Shared progress, streak, completion, and achievement data derived from group activity</li>
         </ul>
 
-        <h3>C. Device, app, and local storage information</h3>
+        <h3>C. Moderation and safety information</h3>
+        <ul>
+          <li>Reports you submit about workout posts or comments</li>
+          <li>Block records when you block another user</li>
+          <li>Identifiers for the reporter, reported user, related group, post, or comment</li>
+          <li>Content snapshots, such as the reported caption, comment body, image reference, timestamps, and related profile details, so we can review the report</li>
+          <li>Moderation status, review notes, and enforcement actions</li>
+        </ul>
+
+        <h3>D. Device, app, and local storage information</h3>
         <ul>
           <li>The currently selected group ID stored on your device</li>
           <li>Authentication and session data stored on your device to keep you signed in</li>
@@ -55,10 +64,10 @@
           <li>Technical data needed to upload media and operate the service, such as timestamps and request metadata</li>
         </ul>
 
-        <h3>D. Information you choose to submit</h3>
+        <h3>E. Information you choose to submit</h3>
         <p>Anything you include in captions, comments, or photos may contain personal information, depending on what you choose to share.</p>
 
-        <h3>E. Information we do not currently request in this app build</h3>
+        <h3>F. Information we do not currently request in this app build</h3>
         <p>In the current codebase reviewed for this draft, Gynus does not request your precise location, contacts, microphone, or advertising identifier, and it does not include third-party advertising SDKs.</p>
 
         <h2>4. How We Use Information</h2>
@@ -70,6 +79,7 @@
           <li>Upload and display workout photos you choose to post</li>
           <li>Synchronize activity across group members in near real time</li>
           <li>Maintain app security, detect misuse, debug errors, and improve reliability</li>
+          <li>Filter objectionable text, review reports, process blocks, enforce our terms, remove offending content, and restrict or eject abusive users</li>
           <li>Comply with legal obligations and enforce our terms or community rules</li>
         </ul>
         <p>We do not currently sell personal information or use the current app build for third-party advertising or cross-context behavioral advertising.</p>
@@ -98,9 +108,12 @@
         <p>We use third-party infrastructure providers to operate the app. In the current codebase, this includes Supabase for authentication, database, realtime features, and file storage. These providers process information on our behalf so the app can function.</p>
 
         <h3>C. Important current photo-sharing note</h3>
-        <p>In the current implementation reviewed for this draft, workout photos are uploaded to cloud storage and served through a public URL. That means a workout photo is intended to appear in your group experience, but anyone who obtains the direct URL may also be able to access that image outside the app. If you do not want that risk, do not upload a workout photo until the storage design is changed.</p>
+        <p>Workout photos are uploaded to private cloud storage and displayed through time-limited signed URLs for authorized group members. Profile photos may be served through public URLs so they can appear in the app.</p>
 
-        <h3>D. Legal and safety disclosures</h3>
+        <h3>D. Moderation and internal review</h3>
+        <p>When you report content or block a user, the report and related content snapshot may be reviewed by us, our internal Gynus moderation team, and tools or service providers we use to manage the review queue. We use this information to investigate reports, act within 24 hours where required, remove objectionable content, restrict or eject abusive users, and protect the service.</p>
+
+        <h3>E. Legal and safety disclosures</h3>
         <p>We may disclose information if reasonably necessary to:</p>
         <ul>
           <li>Comply with law, regulation, legal process, or valid government requests</li>
