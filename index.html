@@ -12,11 +12,19 @@
   </head>
   <body>
     <div class="site">
+      <header class="lang-bar">
+        <select class="lang-select" id="lang-select" aria-label="Select language">
+          <option value="en">EN</option>
+          <option value="pt">PT</option>
+          <option value="es">ES</option>
+        </select>
+      </header>
+
       <main class="page-main">
         <section class="panel hero-panel" aria-labelledby="hero-title">
-          <p class="kicker">Pre-launch</p>
-          <h1 id="hero-title">Build a workout habit together.</h1>
-          <p class="lead">
+          <p class="kicker" data-i18n="kicker">Pre-launch</p>
+          <h1 id="hero-title" data-i18n="title">Build a workout habit together.</h1>
+          <p class="lead" data-i18n="lead">
             Gynus helps small groups stay consistent with shared goals, weekly
             progress, and a simple space for showing up together.
           </p>
@@ -38,19 +46,88 @@
               App Store
             </a>
             <br>
-            <div>Reach out on support@gynus.fit</div>
+            <div data-i18n="support">Reach out on support@gynus.fit</div>
           </div>
         </section>
       </main>
-      
 
       <footer class="site-footer">
         <nav class="footer-nav" aria-label="Footer">
-          <a href="./privacy.html">Privacy Policy</a>
-          <a href="./terms.html">Terms of Service</a>
-          <a href="./accountInfo.html">Account Info</a>
+          <a href="./privacy.html" data-i18n="privacy">Privacy Policy</a>
+          <a href="./terms.html" data-i18n="terms">Terms of Service</a>
+          <a href="./accountInfo.html" data-i18n="account">Account Info</a>
         </nav>
       </footer>
     </div>
+
+    <script>
+      const translations = {
+        en: {
+          page_title: 'Gynus | Pre-launch',
+          meta_desc: 'Gynus is a shared workout habit app for groups. The app is launching soon on Google Play and the App Store.',
+          kicker: 'Pre-launch',
+          title: 'Build a workout habit together.',
+          lead: 'Gynus helps small groups stay consistent with shared goals, weekly progress, and a simple space for showing up together.',
+          support: 'Reach out on support@gynus.fit',
+          privacy: 'Privacy Policy',
+          terms: 'Terms of Service',
+          account: 'Account Info',
+        },
+        pt: {
+          page_title: 'Gynus | Pré-lançamento',
+          meta_desc: 'Gynus é um app de hábitos de treino compartilhado para grupos. O app será lançado em breve no Google Play e na App Store.',
+          kicker: 'Pré-lançamento',
+          title: 'Construa um hábito de treino juntos.',
+          lead: 'O Gynus ajuda pequenos grupos a se manterem consistentes com metas compartilhadas, progresso semanal e um espaço simples para aparecer juntos.',
+          support: 'Entre em contato pelo support@gynus.fit',
+          privacy: 'Política de Privacidade',
+          terms: 'Termos de Serviço',
+          account: 'Informações da Conta',
+        },
+        es: {
+          page_title: 'Gynus | Próximamente',
+          meta_desc: 'Gynus es una app de hábitos de entrenamiento compartido para grupos. La app se lanzará pronto en Google Play y la App Store.',
+          kicker: 'Próximamente',
+          title: 'Construye un hábito de entrenamiento juntos.',
+          lead: 'Gynus ayuda a pequeños grupos a mantenerse constantes con metas compartidas, progreso semanal y un espacio simple para aparecer juntos.',
+          support: 'Contáctanos en support@gynus.fit',
+          privacy: 'Política de Privacidad',
+          terms: 'Términos de Servicio',
+          account: 'Información de Cuenta',
+        },
+      };
+
+      function setLanguage(lang) {
+        const t = translations[lang];
+        if (!t) return;
+
+        document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+        document.title = t.page_title;
+        document.querySelector('meta[name="description"]').content = t.meta_desc;
+
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+          var key = el.dataset.i18n;
+          if (t[key] !== undefined) el.textContent = t[key];
+        });
+
+        document.getElementById('lang-select').value = lang;
+        localStorage.setItem('lang', lang);
+      }
+
+      function detectLanguage() {
+        var saved = localStorage.getItem('lang');
+        if (saved && translations[saved]) return saved;
+        var browser = (navigator.language || '').toLowerCase();
+        if (browser.startsWith('pt')) return 'pt';
+        if (browser.startsWith('es')) return 'es';
+        return 'en';
+      }
+
+      document.getElementById('lang-select').addEventListener('change', function(e) {
+        setLanguage(e.target.value);
+      });
+
+      setLanguage(detectLanguage());
+    </script>
   </body>
 </html>

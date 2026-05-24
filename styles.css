@@ -141,6 +141,34 @@ ul {
   text-decoration: underline;
 }
 
+.lang-content {
+  display: contents;
+}
+
+.lang-content[hidden] {
+  display: none;
+}
+
+.lang-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 16px;
+}
+
+.lang-select {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 4px 8px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.lang-select:hover {
+  border-color: var(--text);
+}
+
 .site-footer {
   padding: 0 16px 24px;
 }

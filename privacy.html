@@ -8,171 +8,547 @@
 </head>
 <body>
   <div class="site">
-    <main class="page-main page-main-narrow">
-      <a class="back-link" href="./index.html">Home</a>
-      <section class="panel legal-panel">
-        <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: May 13, 2026</p>
+    <header class="lang-bar">
+      <select class="lang-select" id="lang-select" aria-label="Select language">
+        <option value="en">EN</option>
+        <option value="pt">PT</option>
+        <option value="es">ES</option>
+      </select>
+    </header>
 
-        <p>This Privacy Policy describes how <strong>Gynus</strong> is operated by <strong>Kedson Alves da Silva</strong> ("we," "us," or "our") and how we collect, use, disclose, and protect information when you use the Gynus mobile application and related services.</p>
+    <!-- ───── ENGLISH ───── -->
+    <div class="lang-content" data-lang="en" data-title="Privacy Policy | Gynus">
+      <main class="page-main page-main-narrow">
+        <a class="back-link" href="./index.html">Home</a>
+        <section class="panel legal-panel">
+          <h1>Privacy Policy</h1>
+          <p class="meta">Effective date: May 13, 2026</p>
 
-        <h2>1. Contact</h2>
-        <p>If you have questions, requests, or complaints about this Privacy Policy or our data practices, contact us at <a href="mailto:support@gynus.fit">support@gynus.fit</a>.</p>
+          <p>This Privacy Policy describes how <strong>Gynus</strong> is operated by <strong>Kedson Alves da Silva</strong> ("we," "us," or "our") and how we collect, use, disclose, and protect information when you use the Gynus mobile application and related services.</p>
 
-        <h2>2. What Gynus Does</h2>
-        <p>Gynus is a group workout habit app for small crews. It lets users join a group, log workouts, optionally attach photos and captions, and interact with other members through comments, reactions, and shared progress tracking.</p>
+          <h2>1. Contact</h2>
+          <p>If you have questions, requests, or complaints about this Privacy Policy or our data practices, contact us at <a href="mailto:support@gynus.fit">support@gynus.fit</a>.</p>
 
-        <h2>3. Information We Collect</h2>
-        <p>We collect the following categories of information:</p>
+          <h2>2. What Gynus Does</h2>
+          <p>Gynus is a group workout habit app for small crews. It lets users join a group, log workouts, optionally attach photos and captions, and interact with other members through comments, reactions, and shared progress tracking.</p>
 
-        <h3>A. Profile and access information</h3>
-        <ul>
-          <li>Display name</li>
-          <li>Access code used to claim a profile</li>
-          <li>Tagline</li>
-          <li>Accent color</li>
-          <li>Optional profile image URL, if one is associated with your profile</li>
-          <li>Internal profile identifiers</li>
-          <li>Anonymous authentication and session identifiers used to bind a device session to a profile</li>
-        </ul>
+          <h2>3. Information We Collect</h2>
+          <p>We collect the following categories of information:</p>
 
-        <h3>B. Workout and group activity information</h3>
-        <ul>
-          <li>Workout log date</li>
-          <li>Optional workout caption</li>
-          <li>Optional workout photo</li>
-          <li>Comments and reactions you post</li>
-          <li>Group membership and role information</li>
-          <li>Group names, descriptions, and configured time zone</li>
-          <li>Shared progress, streak, completion, and achievement data derived from group activity</li>
-        </ul>
+          <h3>A. Profile and access information</h3>
+          <ul>
+            <li>Display name</li>
+            <li>Access code used to claim a profile</li>
+            <li>Tagline</li>
+            <li>Accent color</li>
+            <li>Optional profile image URL, if one is associated with your profile</li>
+            <li>Internal profile identifiers</li>
+            <li>Anonymous authentication and session identifiers used to bind a device session to a profile</li>
+          </ul>
 
-        <h3>C. Moderation and safety information</h3>
-        <ul>
-          <li>Reports you submit about workout posts or comments</li>
-          <li>Block records when you block another user</li>
-          <li>Identifiers for the reporter, reported user, related group, post, or comment</li>
-          <li>Content snapshots, such as the reported caption, comment body, image reference, timestamps, and related profile details, so we can review the report</li>
-          <li>Moderation status, review notes, and enforcement actions</li>
-        </ul>
+          <h3>B. Workout and group activity information</h3>
+          <ul>
+            <li>Workout log date</li>
+            <li>Optional workout caption</li>
+            <li>Optional workout photo</li>
+            <li>Comments and reactions you post</li>
+            <li>Group membership and role information</li>
+            <li>Group names, descriptions, and configured time zone</li>
+            <li>Shared progress, streak, completion, and achievement data derived from group activity</li>
+          </ul>
 
-        <h3>D. Device, app, and local storage information</h3>
-        <ul>
-          <li>The currently selected group ID stored on your device</li>
-          <li>Authentication and session data stored on your device to keep you signed in</li>
-          <li>Camera or photo library permission status, when you choose to use those features</li>
-          <li>Technical data needed to upload media and operate the service, such as timestamps and request metadata</li>
-        </ul>
+          <h3>C. Moderation and safety information</h3>
+          <ul>
+            <li>Reports you submit about workout posts or comments</li>
+            <li>Block records when you block another user</li>
+            <li>Identifiers for the reporter, reported user, related group, post, or comment</li>
+            <li>Content snapshots, such as the reported caption, comment body, image reference, timestamps, and related profile details, so we can review the report</li>
+            <li>Moderation status, review notes, and enforcement actions</li>
+          </ul>
 
-        <h3>E. Information you choose to submit</h3>
-        <p>Anything you include in captions, comments, or photos may contain personal information, depending on what you choose to share.</p>
+          <h3>D. Device, app, and local storage information</h3>
+          <ul>
+            <li>The currently selected group ID stored on your device</li>
+            <li>Authentication and session data stored on your device to keep you signed in</li>
+            <li>Camera or photo library permission status, when you choose to use those features</li>
+            <li>Technical data needed to upload media and operate the service, such as timestamps and request metadata</li>
+          </ul>
 
-        <h3>F. Information we do not currently request in this app build</h3>
-        <p>In the current codebase reviewed for this draft, Gynus does not request your precise location, contacts, microphone, or advertising identifier, and it does not include third-party advertising SDKs.</p>
+          <h3>E. Information you choose to submit</h3>
+          <p>Anything you include in captions, comments, or photos may contain personal information, depending on what you choose to share.</p>
 
-        <h2>4. How We Use Information</h2>
-        <p>We use the information above to:</p>
-        <ul>
-          <li>Provide and operate Gynus</li>
-          <li>Authenticate a device session and connect it to the correct profile</li>
-          <li>Show your groups, workout feed, progress, achievements, comments, and reactions</li>
-          <li>Upload and display workout photos you choose to post</li>
-          <li>Synchronize activity across group members in near real time</li>
-          <li>Maintain app security, detect misuse, debug errors, and improve reliability</li>
-          <li>Filter objectionable text, review reports, process blocks, enforce our terms, remove offending content, and restrict or eject abusive users</li>
-          <li>Comply with legal obligations and enforce our terms or community rules</li>
-        </ul>
-        <p>We do not currently sell personal information or use the current app build for third-party advertising or cross-context behavioral advertising.</p>
+          <h3>F. Information we do not currently request in this app build</h3>
+          <p>In the current codebase reviewed for this draft, Gynus does not request your precise location, contacts, microphone, or advertising identifier, and it does not include third-party advertising SDKs.</p>
 
-        <h2>5. Camera and Photo Library Access</h2>
-        <p>Gynus asks for camera and photo library access only when you choose to:</p>
-        <ul>
-          <li>Take a workout photo in the app</li>
-          <li>Attach an existing photo from your library to a workout log</li>
-        </ul>
-        <p>You can deny these permissions and still use the app without photo uploads. You can also change these permissions later in your device settings.</p>
+          <h2>4. How We Use Information</h2>
+          <p>We use the information above to:</p>
+          <ul>
+            <li>Provide and operate Gynus</li>
+            <li>Authenticate a device session and connect it to the correct profile</li>
+            <li>Show your groups, workout feed, progress, achievements, comments, and reactions</li>
+            <li>Upload and display workout photos you choose to post</li>
+            <li>Synchronize activity across group members in near real time</li>
+            <li>Maintain app security, detect misuse, debug errors, and improve reliability</li>
+            <li>Filter objectionable text, review reports, process blocks, enforce our terms, remove offending content, and restrict or eject abusive users</li>
+            <li>Comply with legal obligations and enforce our terms or community rules</li>
+          </ul>
+          <p>We do not currently sell personal information or use the current app build for third-party advertising or cross-context behavioral advertising.</p>
 
-        <h2>6. How Information Is Shared</h2>
-        <p>We share information in the following ways:</p>
+          <h2>5. Camera and Photo Library Access</h2>
+          <p>Gynus asks for camera and photo library access only when you choose to:</p>
+          <ul>
+            <li>Take a workout photo in the app</li>
+            <li>Attach an existing photo from your library to a workout log</li>
+          </ul>
+          <p>You can deny these permissions and still use the app without photo uploads. You can also change these permissions later in your device settings.</p>
 
-        <h3>A. With other members of your group</h3>
-        <p>Because Gynus is a social accountability app, other members of your group may be able to see:</p>
-        <ul>
-          <li>Your display name and profile image</li>
-          <li>Your workout logs, including workout dates, captions, and uploaded photos</li>
-          <li>Your comments and reactions</li>
-          <li>Your contribution to shared progress, streaks, and achievements</li>
-        </ul>
+          <h2>6. How Information Is Shared</h2>
 
-        <h3>B. With service providers</h3>
-        <p>We use third-party infrastructure providers to operate the app. In the current codebase, this includes Supabase for authentication, database, realtime features, and file storage. These providers process information on our behalf so the app can function.</p>
+          <h3>A. With other members of your group</h3>
+          <p>Because Gynus is a social accountability app, other members of your group may be able to see:</p>
+          <ul>
+            <li>Your display name and profile image</li>
+            <li>Your workout logs, including workout dates, captions, and uploaded photos</li>
+            <li>Your comments and reactions</li>
+            <li>Your contribution to shared progress, streaks, and achievements</li>
+          </ul>
 
-        <h3>C. Important current photo-sharing note</h3>
-        <p>Workout photos are uploaded to private cloud storage and displayed through time-limited signed URLs for authorized group members. Profile photos may be served through public URLs so they can appear in the app.</p>
+          <h3>B. With service providers</h3>
+          <p>We use third-party infrastructure providers to operate the app. In the current codebase, this includes Supabase for authentication, database, realtime features, and file storage. These providers process information on our behalf so the app can function.</p>
 
-        <h3>D. Moderation and internal review</h3>
-        <p>When you report content or block a user, the report and related content snapshot may be reviewed by us, our internal Gynus moderation team, and tools or service providers we use to manage the review queue. We use this information to investigate reports, act within 24 hours where required, remove objectionable content, restrict or eject abusive users, and protect the service.</p>
+          <h3>C. Important current photo-sharing note</h3>
+          <p>Workout photos are uploaded to private cloud storage and displayed through time-limited signed URLs for authorized group members. Profile photos may be served through public URLs so they can appear in the app.</p>
 
-        <h3>E. Legal and safety disclosures</h3>
-        <p>We may disclose information if reasonably necessary to:</p>
-        <ul>
-          <li>Comply with law, regulation, legal process, or valid government requests</li>
-          <li>Protect the rights, safety, and security of users, the public, or our service</li>
-          <li>Investigate fraud, abuse, or security issues</li>
-        </ul>
+          <h3>D. Moderation and internal review</h3>
+          <p>When you report content or block a user, the report and related content snapshot may be reviewed by us, our internal Gynus moderation team, and tools or service providers we use to manage the review queue. We use this information to investigate reports, act within 24 hours where required, remove objectionable content, restrict or eject abusive users, and protect the service.</p>
 
-        <h2>7. Data Retention</h2>
-        <p>We retain personal information for as long as reasonably necessary to operate Gynus, maintain the group experience, comply with legal obligations, resolve disputes, and enforce agreements.</p>
-        <p>In the current app build:</p>
-        <ul>
-          <li>Local session data may remain on your device until you reset the app state, clear app storage, or uninstall the app</li>
-          <li>Workout logs, comments, reactions, profile data, and uploaded photos may remain in the backend until they are deleted by us or at your request</li>
-          <li>The in-app "Release tester" action unbinds the current device session from a claimed profile, but it does not by itself delete profile, workout, comment, reaction, or photo data from the backend</li>
-        </ul>
+          <h3>E. Legal and safety disclosures</h3>
+          <p>We may disclose information if reasonably necessary to:</p>
+          <ul>
+            <li>Comply with law, regulation, legal process, or valid government requests</li>
+            <li>Protect the rights, safety, and security of users, the public, or our service</li>
+            <li>Investigate fraud, abuse, or security issues</li>
+          </ul>
 
-        <h2>8. Your Choices and Rights</h2>
-        <p>Depending on where you live, you may have rights to request access to, correction of, deletion of, or export of your personal information, and to object to or restrict certain processing.</p>
-        <p>You can currently:</p>
-        <ul>
-          <li>Choose not to upload photos</li>
-          <li>Control camera and photo library permissions in your device settings</li>
-          <li>Use the in-app release and reset flow to unbind the current device from a claimed profile</li>
-          <li>Request privacy help, correction, or deletion by contacting us at <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
-        </ul>
-        <p>If you are in the EEA, UK, or another jurisdiction with similar privacy rights, you may also have the right to lodge a complaint with your local data protection authority.</p>
-        <p>We do not currently use automated decision-making or profiling that produces legal or similarly significant effects.</p>
+          <h2>7. Data Retention</h2>
+          <p>We retain personal information for as long as reasonably necessary to operate Gynus, maintain the group experience, comply with legal obligations, resolve disputes, and enforce agreements.</p>
+          <p>In the current app build:</p>
+          <ul>
+            <li>Local session data may remain on your device until you reset the app state, clear app storage, or uninstall the app</li>
+            <li>Workout logs, comments, reactions, profile data, and uploaded photos may remain in the backend until they are deleted by us or at your request</li>
+            <li>The in-app "Release tester" action unbinds the current device session from a claimed profile, but it does not by itself delete profile, workout, comment, reaction, or photo data from the backend</li>
+          </ul>
 
-        <h2>9. Legal Bases for Processing (EEA/UK)</h2>
-        <p>If EEA or UK privacy law applies, we generally rely on the following legal bases:</p>
-        <ul>
-          <li><strong>Performance of a contract</strong>: to provide the app, connect you with your group, and display your activity and content</li>
-          <li><strong>Consent</strong>: when you choose to grant camera or photo library access and upload optional media</li>
-          <li><strong>Legitimate interests</strong>: to secure, maintain, troubleshoot, and improve the service, and to prevent misuse</li>
-          <li><strong>Legal obligation</strong>: where processing is required to comply with applicable law</li>
-        </ul>
+          <h2>8. Your Choices and Rights</h2>
+          <p>Depending on where you live, you may have rights to request access to, correction of, deletion of, or export of your personal information, and to object to or restrict certain processing.</p>
+          <p>You can currently:</p>
+          <ul>
+            <li>Choose not to upload photos</li>
+            <li>Control camera and photo library permissions in your device settings</li>
+            <li>Use the in-app release and reset flow to unbind the current device from a claimed profile</li>
+            <li>Request privacy help, correction, or deletion by contacting us at <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
+          </ul>
+          <p>If you are in the EEA, UK, or another jurisdiction with similar privacy rights, you may also have the right to lodge a complaint with your local data protection authority.</p>
+          <p>We do not currently use automated decision-making or profiling that produces legal or similarly significant effects.</p>
 
-        <h2>10. International Transfers</h2>
-        <p>Your information may be processed in countries other than the country where you live, depending on where we and our service providers operate our systems. Where required by law, we will use appropriate safeguards for international transfers of personal data.</p>
+          <h2>9. Legal Bases for Processing (EEA/UK)</h2>
+          <p>If EEA or UK privacy law applies, we generally rely on the following legal bases:</p>
+          <ul>
+            <li><strong>Performance of a contract</strong>: to provide the app, connect you with your group, and display your activity and content</li>
+            <li><strong>Consent</strong>: when you choose to grant camera or photo library access and upload optional media</li>
+            <li><strong>Legitimate interests</strong>: to secure, maintain, troubleshoot, and improve the service, and to prevent misuse</li>
+            <li><strong>Legal obligation</strong>: where processing is required to comply with applicable law</li>
+          </ul>
 
-        <h2>11. Children's Privacy</h2>
-        <p>Gynus is not directed to children under 13, or the higher minimum age required by local law. If you believe a child has provided personal information to us, contact us at <a href="mailto:support@gynus.fit">support@gynus.fit</a> so we can review and address the issue.</p>
+          <h2>10. International Transfers</h2>
+          <p>Your information may be processed in countries other than the country where you live, depending on where we and our service providers operate our systems. Where required by law, we will use appropriate safeguards for international transfers of personal data.</p>
 
-        <h2>12. Security</h2>
-        <p>We use reasonable administrative, technical, and organizational measures designed to protect personal information. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+          <h2>11. Children's Privacy</h2>
+          <p>Gynus is not directed to children under 13, or the higher minimum age required by local law. If you believe a child has provided personal information to us, contact us at <a href="mailto:support@gynus.fit">support@gynus.fit</a> so we can review and address the issue.</p>
 
-        <h2>13. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the effective date above and, where required, provide additional notice.</p>
-      </section>
-    </main>
+          <h2>12. Security</h2>
+          <p>We use reasonable administrative, technical, and organizational measures designed to protect personal information. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
 
-    <footer class="site-footer">
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="./index.html">Home</a>
-        <a href="./privacy.html" aria-current="page">Privacy Policy</a>
-        <a href="./terms.html">Terms of Service</a>
-        <a href="./accountInfo.html">Account Info</a>
-      </nav>
-    </footer>
+          <h2>13. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. If we make material changes, we will update the effective date above and, where required, provide additional notice.</p>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="./index.html">Home</a>
+          <a href="./privacy.html" aria-current="page">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./accountInfo.html">Account Info</a>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- ───── PORTUGUESE (BR) ───── -->
+    <div class="lang-content" data-lang="pt" data-title="Política de Privacidade | Gynus" hidden>
+      <main class="page-main page-main-narrow">
+        <a class="back-link" href="./index.html">Início</a>
+        <section class="panel legal-panel">
+          <h1>Política de Privacidade</h1>
+          <p class="meta">Data de vigência: 13 de maio de 2026</p>
+
+          <p>Esta Política de Privacidade descreve como o <strong>Gynus</strong> é operado por <strong>Kedson Alves da Silva</strong> ("nós", "nos" ou "nosso") e como coletamos, usamos, divulgamos e protegemos informações quando você usa o aplicativo móvel Gynus e os serviços relacionados.</p>
+
+          <h2>1. Contato</h2>
+          <p>Se você tiver dúvidas, solicitações ou reclamações sobre esta Política de Privacidade ou nossas práticas de dados, entre em contato conosco em <a href="mailto:support@gynus.fit">support@gynus.fit</a>.</p>
+
+          <h2>2. O que o Gynus faz</h2>
+          <p>O Gynus é um app de hábitos de treino em grupo para pequenas equipes. Ele permite que os usuários entrem em um grupo, registrem treinos, opcionalmente anexem fotos e legendas, e interajam com outros membros por meio de comentários, reações e acompanhamento de progresso compartilhado.</p>
+
+          <h2>3. Informações que coletamos</h2>
+          <p>Coletamos as seguintes categorias de informações:</p>
+
+          <h3>A. Informações de perfil e acesso</h3>
+          <ul>
+            <li>Nome de exibição</li>
+            <li>Código de acesso usado para reivindicar um perfil</li>
+            <li>Tagline</li>
+            <li>Cor de destaque</li>
+            <li>URL de imagem de perfil opcional, se houver uma associada ao seu perfil</li>
+            <li>Identificadores internos de perfil</li>
+            <li>Identificadores anônimos de autenticação e sessão usados para vincular uma sessão de dispositivo a um perfil</li>
+          </ul>
+
+          <h3>B. Informações de atividade de treino e grupo</h3>
+          <ul>
+            <li>Data do registro de treino</li>
+            <li>Legenda de treino opcional</li>
+            <li>Foto de treino opcional</li>
+            <li>Comentários e reações que você publica</li>
+            <li>Informações de associação e função no grupo</li>
+            <li>Nomes, descrições e fuso horário configurado do grupo</li>
+            <li>Dados de progresso compartilhado, sequência, conclusão e conquistas derivados da atividade do grupo</li>
+          </ul>
+
+          <h3>C. Informações de moderação e segurança</h3>
+          <ul>
+            <li>Denúncias que você envia sobre publicações de treino ou comentários</li>
+            <li>Registros de bloqueio quando você bloqueia outro usuário</li>
+            <li>Identificadores do denunciante, usuário denunciado, grupo relacionado, publicação ou comentário</li>
+            <li>Capturas de conteúdo, como a legenda denunciada, corpo do comentário, referência de imagem, carimbos de data/hora e detalhes de perfil relacionados, para que possamos revisar a denúncia</li>
+            <li>Status de moderação, notas de revisão e ações de aplicação</li>
+          </ul>
+
+          <h3>D. Informações de dispositivo, app e armazenamento local</h3>
+          <ul>
+            <li>O ID do grupo selecionado atualmente armazenado no seu dispositivo</li>
+            <li>Dados de autenticação e sessão armazenados no seu dispositivo para mantê-lo conectado</li>
+            <li>Status de permissão de câmera ou biblioteca de fotos, quando você escolhe usar esses recursos</li>
+            <li>Dados técnicos necessários para fazer upload de mídia e operar o serviço, como carimbos de data/hora e metadados de solicitação</li>
+          </ul>
+
+          <h3>E. Informações que você escolhe enviar</h3>
+          <p>Qualquer coisa que você incluir em legendas, comentários ou fotos pode conter informações pessoais, dependendo do que você escolher compartilhar.</p>
+
+          <h3>F. Informações que não solicitamos atualmente nesta versão do app</h3>
+          <p>Na base de código atual revisada para este rascunho, o Gynus não solicita sua localização precisa, contatos, microfone ou identificador de publicidade, e não inclui SDKs de publicidade de terceiros.</p>
+
+          <h2>4. Como usamos as informações</h2>
+          <p>Usamos as informações acima para:</p>
+          <ul>
+            <li>Fornecer e operar o Gynus</li>
+            <li>Autenticar uma sessão de dispositivo e conectá-la ao perfil correto</li>
+            <li>Mostrar seus grupos, feed de treino, progresso, conquistas, comentários e reações</li>
+            <li>Fazer upload e exibir fotos de treino que você escolhe publicar</li>
+            <li>Sincronizar a atividade entre os membros do grupo em quase tempo real</li>
+            <li>Manter a segurança do app, detectar uso indevido, depurar erros e melhorar a confiabilidade</li>
+            <li>Filtrar textos impróprios, revisar denúncias, processar bloqueios, aplicar nossos termos, remover conteúdo ofensivo e restringir ou expulsar usuários abusivos</li>
+            <li>Cumprir obrigações legais e aplicar nossos termos ou regras da comunidade</li>
+          </ul>
+          <p>Atualmente, não vendemos informações pessoais nem usamos a versão atual do app para publicidade de terceiros ou publicidade comportamental entre contextos.</p>
+
+          <h2>5. Acesso à câmera e à biblioteca de fotos</h2>
+          <p>O Gynus solicita acesso à câmera e à biblioteca de fotos somente quando você escolhe:</p>
+          <ul>
+            <li>Tirar uma foto de treino no app</li>
+            <li>Anexar uma foto existente da sua biblioteca a um registro de treino</li>
+          </ul>
+          <p>Você pode negar essas permissões e ainda usar o app sem uploads de fotos. Você também pode alterar essas permissões posteriormente nas configurações do dispositivo.</p>
+
+          <h2>6. Como as informações são compartilhadas</h2>
+
+          <h3>A. Com outros membros do seu grupo</h3>
+          <p>Como o Gynus é um app de responsabilidade social, outros membros do seu grupo podem ver:</p>
+          <ul>
+            <li>Seu nome de exibição e imagem de perfil</li>
+            <li>Seus registros de treino, incluindo datas de treino, legendas e fotos enviadas</li>
+            <li>Seus comentários e reações</li>
+            <li>Sua contribuição para o progresso compartilhado, sequências e conquistas</li>
+          </ul>
+
+          <h3>B. Com provedores de serviços</h3>
+          <p>Usamos provedores de infraestrutura de terceiros para operar o app. Na base de código atual, isso inclui o Supabase para autenticação, banco de dados, recursos em tempo real e armazenamento de arquivos. Esses provedores processam informações em nosso nome para que o app funcione.</p>
+
+          <h3>C. Nota importante sobre o compartilhamento de fotos atual</h3>
+          <p>Fotos de treino são enviadas para armazenamento em nuvem privado e exibidas por meio de URLs assinadas com tempo limitado para membros do grupo autorizados. Fotos de perfil podem ser veiculadas por URLs públicas para que possam aparecer no app.</p>
+
+          <h3>D. Moderação e revisão interna</h3>
+          <p>Quando você denuncia um conteúdo ou bloqueia um usuário, o relatório e o instantâneo de conteúdo relacionado podem ser revisados por nós, nossa equipe interna de moderação do Gynus e ferramentas ou provedores de serviços que usamos para gerenciar a fila de revisão. Usamos essas informações para investigar denúncias, agir dentro de 24 horas quando necessário, remover conteúdo ofensivo, restringir ou expulsar usuários abusivos e proteger o serviço.</p>
+
+          <h3>E. Divulgações legais e de segurança</h3>
+          <p>Podemos divulgar informações se razoavelmente necessário para:</p>
+          <ul>
+            <li>Cumprir a lei, regulamentação, processo legal ou solicitações governamentais válidas</li>
+            <li>Proteger os direitos, a segurança dos usuários, do público ou do nosso serviço</li>
+            <li>Investigar fraude, abuso ou problemas de segurança</li>
+          </ul>
+
+          <h2>7. Retenção de dados</h2>
+          <p>Retemos informações pessoais pelo tempo razoavelmente necessário para operar o Gynus, manter a experiência do grupo, cumprir obrigações legais, resolver disputas e aplicar acordos.</p>
+          <p>Na versão atual do app:</p>
+          <ul>
+            <li>Dados de sessão local podem permanecer no seu dispositivo até que você redefina o estado do app, limpe o armazenamento do app ou desinstale o app</li>
+            <li>Registros de treino, comentários, reações, dados de perfil e fotos enviadas podem permanecer no backend até que sejam excluídos por nós ou a seu pedido</li>
+            <li>A ação "Liberar testador" no app desvincula a sessão do dispositivo atual de um perfil reivindicado, mas por si só não exclui dados de perfil, treino, comentário, reação ou foto do backend</li>
+          </ul>
+
+          <h2>8. Suas escolhas e direitos</h2>
+          <p>Dependendo de onde você mora, você pode ter direitos de solicitar acesso, correção, exclusão ou exportação de suas informações pessoais, e de se opor ou restringir determinados processamentos.</p>
+          <p>Atualmente, você pode:</p>
+          <ul>
+            <li>Optar por não fazer upload de fotos</li>
+            <li>Controlar as permissões de câmera e biblioteca de fotos nas configurações do dispositivo</li>
+            <li>Usar o fluxo de liberação e redefinição no app para desvincular o dispositivo atual de um perfil reivindicado</li>
+            <li>Solicitar ajuda com privacidade, correção ou exclusão entrando em contato conosco em <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
+          </ul>
+          <p>Se você estiver no EEE, no Reino Unido ou em outra jurisdição com direitos de privacidade semelhantes, também poderá ter o direito de registrar uma reclamação junto à sua autoridade local de proteção de dados.</p>
+          <p>Atualmente, não utilizamos tomada de decisão automatizada ou criação de perfis que produzam efeitos jurídicos ou similarmente significativos.</p>
+
+          <h2>9. Bases legais para o processamento (EEE/Reino Unido)</h2>
+          <p>Se a lei de privacidade do EEE ou do Reino Unido se aplicar, geralmente nos baseamos nas seguintes bases legais:</p>
+          <ul>
+            <li><strong>Execução de um contrato</strong>: para fornecer o app, conectá-lo ao seu grupo e exibir sua atividade e conteúdo</li>
+            <li><strong>Consentimento</strong>: quando você escolhe conceder acesso à câmera ou à biblioteca de fotos e fazer upload de mídia opcional</li>
+            <li><strong>Interesses legítimos</strong>: para proteger, manter, solucionar problemas e melhorar o serviço, e para prevenir uso indevido</li>
+            <li><strong>Obrigação legal</strong>: quando o processamento é necessário para cumprir a lei aplicável</li>
+          </ul>
+
+          <h2>10. Transferências internacionais</h2>
+          <p>Suas informações podem ser processadas em países diferentes do país onde você mora, dependendo de onde nós e nossos provedores de serviços operamos nossos sistemas. Quando exigido por lei, usaremos salvaguardas adequadas para transferências internacionais de dados pessoais.</p>
+
+          <h2>11. Privacidade de crianças</h2>
+          <p>O Gynus não é destinado a crianças menores de 13 anos, ou à idade mínima mais alta exigida pela lei local. Se você acredita que uma criança forneceu informações pessoais para nós, entre em contato conosco em <a href="mailto:support@gynus.fit">support@gynus.fit</a> para que possamos revisar e resolver o problema.</p>
+
+          <h2>12. Segurança</h2>
+          <p>Usamos medidas administrativas, técnicas e organizacionais razoáveis projetadas para proteger informações pessoais. No entanto, nenhum método de transmissão pela internet ou armazenamento eletrônico é completamente seguro, e não podemos garantir segurança absoluta.</p>
+
+          <h2>13. Alterações a esta política</h2>
+          <p>Podemos atualizar esta Política de Privacidade de tempos em tempos. Se fizermos alterações materiais, atualizaremos a data de vigência acima e, quando exigido, forneceremos aviso adicional.</p>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <nav class="footer-nav" aria-label="Rodapé">
+          <a href="./index.html">Início</a>
+          <a href="./privacy.html" aria-current="page">Política de Privacidade</a>
+          <a href="./terms.html">Termos de Serviço</a>
+          <a href="./accountInfo.html">Informações da Conta</a>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- ───── SPANISH ───── -->
+    <div class="lang-content" data-lang="es" data-title="Política de Privacidad | Gynus" hidden>
+      <main class="page-main page-main-narrow">
+        <a class="back-link" href="./index.html">Inicio</a>
+        <section class="panel legal-panel">
+          <h1>Política de Privacidad</h1>
+          <p class="meta">Fecha de vigencia: 13 de mayo de 2026</p>
+
+          <p>Esta Política de Privacidad describe cómo <strong>Gynus</strong> es operado por <strong>Kedson Alves da Silva</strong> ("nosotros", "nos" o "nuestro") y cómo recopilamos, usamos, divulgamos y protegemos información cuando usas la aplicación móvil Gynus y los servicios relacionados.</p>
+
+          <h2>1. Contacto</h2>
+          <p>Si tienes preguntas, solicitudes o quejas sobre esta Política de Privacidad o nuestras prácticas de datos, contáctanos en <a href="mailto:support@gynus.fit">support@gynus.fit</a>.</p>
+
+          <h2>2. Qué hace Gynus</h2>
+          <p>Gynus es una app de hábitos de entrenamiento en grupo para pequeños equipos. Permite a los usuarios unirse a un grupo, registrar entrenamientos, adjuntar opcionalmente fotos y descripciones, e interactuar con otros miembros a través de comentarios, reacciones y seguimiento compartido del progreso.</p>
+
+          <h2>3. Información que recopilamos</h2>
+          <p>Recopilamos las siguientes categorías de información:</p>
+
+          <h3>A. Información de perfil y acceso</h3>
+          <ul>
+            <li>Nombre para mostrar</li>
+            <li>Código de acceso usado para reclamar un perfil</li>
+            <li>Descripción breve (tagline)</li>
+            <li>Color de acento</li>
+            <li>URL de imagen de perfil opcional, si hay una asociada a tu perfil</li>
+            <li>Identificadores internos de perfil</li>
+            <li>Identificadores anónimos de autenticación y sesión usados para vincular una sesión de dispositivo a un perfil</li>
+          </ul>
+
+          <h3>B. Información de actividad de entrenamiento y grupo</h3>
+          <ul>
+            <li>Fecha del registro de entrenamiento</li>
+            <li>Descripción opcional del entrenamiento</li>
+            <li>Foto opcional del entrenamiento</li>
+            <li>Comentarios y reacciones que publicas</li>
+            <li>Información de membresía y rol en el grupo</li>
+            <li>Nombres, descripciones y zona horaria configurada del grupo</li>
+            <li>Datos de progreso compartido, racha, completación y logros derivados de la actividad del grupo</li>
+          </ul>
+
+          <h3>C. Información de moderación y seguridad</h3>
+          <ul>
+            <li>Reportes que envías sobre publicaciones de entrenamiento o comentarios</li>
+            <li>Registros de bloqueo cuando bloqueas a otro usuario</li>
+            <li>Identificadores del denunciante, usuario denunciado, grupo relacionado, publicación o comentario</li>
+            <li>Capturas de contenido, como la descripción reportada, cuerpo del comentario, referencia de imagen, marcas de tiempo y detalles de perfil relacionados, para que podamos revisar el reporte</li>
+            <li>Estado de moderación, notas de revisión y acciones de cumplimiento</li>
+          </ul>
+
+          <h3>D. Información de dispositivo, app y almacenamiento local</h3>
+          <ul>
+            <li>El ID del grupo actualmente seleccionado almacenado en tu dispositivo</li>
+            <li>Datos de autenticación y sesión almacenados en tu dispositivo para mantenerte con sesión iniciada</li>
+            <li>Estado del permiso de cámara o biblioteca de fotos, cuando eliges usar esas funciones</li>
+            <li>Datos técnicos necesarios para subir medios y operar el servicio, como marcas de tiempo y metadatos de solicitud</li>
+          </ul>
+
+          <h3>E. Información que eliges enviar</h3>
+          <p>Todo lo que incluyas en descripciones, comentarios o fotos puede contener información personal, dependiendo de lo que elijas compartir.</p>
+
+          <h3>F. Información que no solicitamos actualmente en esta versión de la app</h3>
+          <p>En la base de código actual revisada para este borrador, Gynus no solicita tu ubicación precisa, contactos, micrófono o identificador publicitario, y no incluye SDKs de publicidad de terceros.</p>
+
+          <h2>4. Cómo usamos la información</h2>
+          <p>Usamos la información anterior para:</p>
+          <ul>
+            <li>Proporcionar y operar Gynus</li>
+            <li>Autenticar una sesión de dispositivo y conectarla al perfil correcto</li>
+            <li>Mostrar tus grupos, feed de entrenamientos, progreso, logros, comentarios y reacciones</li>
+            <li>Subir y mostrar fotos de entrenamiento que eliges publicar</li>
+            <li>Sincronizar la actividad entre miembros del grupo en tiempo casi real</li>
+            <li>Mantener la seguridad de la app, detectar uso indebido, depurar errores y mejorar la confiabilidad</li>
+            <li>Filtrar texto objetable, revisar reportes, procesar bloqueos, hacer cumplir nuestros términos, eliminar contenido ofensivo y restringir o expulsar usuarios abusivos</li>
+            <li>Cumplir con obligaciones legales y hacer cumplir nuestros términos o reglas de la comunidad</li>
+          </ul>
+          <p>Actualmente no vendemos información personal ni usamos la versión actual de la app para publicidad de terceros o publicidad conductual cruzada.</p>
+
+          <h2>5. Acceso a la cámara y biblioteca de fotos</h2>
+          <p>Gynus solicita acceso a la cámara y la biblioteca de fotos solo cuando eliges:</p>
+          <ul>
+            <li>Tomar una foto de entrenamiento en la app</li>
+            <li>Adjuntar una foto existente de tu biblioteca a un registro de entrenamiento</li>
+          </ul>
+          <p>Puedes denegar estos permisos y aun así usar la app sin subir fotos. También puedes cambiar estos permisos más tarde en la configuración de tu dispositivo.</p>
+
+          <h2>6. Cómo se comparte la información</h2>
+
+          <h3>A. Con otros miembros de tu grupo</h3>
+          <p>Dado que Gynus es una app de responsabilidad social, otros miembros de tu grupo pueden ver:</p>
+          <ul>
+            <li>Tu nombre para mostrar e imagen de perfil</li>
+            <li>Tus registros de entrenamiento, incluyendo fechas, descripciones y fotos subidas</li>
+            <li>Tus comentarios y reacciones</li>
+            <li>Tu contribución al progreso compartido, rachas y logros</li>
+          </ul>
+
+          <h3>B. Con proveedores de servicios</h3>
+          <p>Usamos proveedores de infraestructura de terceros para operar la app. En la base de código actual, esto incluye Supabase para autenticación, base de datos, funciones en tiempo real y almacenamiento de archivos. Estos proveedores procesan información en nuestro nombre para que la app funcione.</p>
+
+          <h3>C. Nota importante sobre el uso compartido de fotos actual</h3>
+          <p>Las fotos de entrenamiento se suben a almacenamiento en la nube privado y se muestran a través de URLs firmadas con tiempo limitado para los miembros autorizados del grupo. Las fotos de perfil pueden servirse a través de URLs públicas para que puedan aparecer en la app.</p>
+
+          <h3>D. Moderación y revisión interna</h3>
+          <p>Cuando reportas contenido o bloqueas a un usuario, el reporte y la captura de contenido relacionada pueden ser revisados por nosotros, nuestro equipo interno de moderación de Gynus y herramientas o proveedores de servicios que usamos para gestionar la cola de revisión. Usamos esta información para investigar reportes, actuar dentro de las 24 horas cuando sea necesario, eliminar contenido ofensivo, restringir o expulsar usuarios abusivos y proteger el servicio.</p>
+
+          <h3>E. Divulgaciones legales y de seguridad</h3>
+          <p>Podemos divulgar información si es razonablemente necesario para:</p>
+          <ul>
+            <li>Cumplir con la ley, reglamento, proceso legal o solicitudes gubernamentales válidas</li>
+            <li>Proteger los derechos, la seguridad de los usuarios, el público o nuestro servicio</li>
+            <li>Investigar fraude, abuso o problemas de seguridad</li>
+          </ul>
+
+          <h2>7. Retención de datos</h2>
+          <p>Conservamos información personal durante el tiempo razonablemente necesario para operar Gynus, mantener la experiencia de grupo, cumplir con obligaciones legales, resolver disputas y hacer cumplir acuerdos.</p>
+          <p>En la versión actual de la app:</p>
+          <ul>
+            <li>Los datos de sesión local pueden permanecer en tu dispositivo hasta que restablezcas el estado de la app, borres el almacenamiento de la app o desinstales la app</li>
+            <li>Los registros de entrenamiento, comentarios, reacciones, datos de perfil y fotos subidas pueden permanecer en el backend hasta que sean eliminados por nosotros o a tu solicitud</li>
+            <li>La acción "Liberar tester" en la app desvincula la sesión del dispositivo actual de un perfil reclamado, pero por sí sola no elimina datos de perfil, entrenamiento, comentario, reacción o foto del backend</li>
+          </ul>
+
+          <h2>8. Tus opciones y derechos</h2>
+          <p>Dependiendo de dónde vives, puedes tener derechos para solicitar acceso, corrección, eliminación o exportación de tu información personal, y para oponerte o restringir cierto procesamiento.</p>
+          <p>Actualmente puedes:</p>
+          <ul>
+            <li>Elegir no subir fotos</li>
+            <li>Controlar los permisos de cámara y biblioteca de fotos en la configuración de tu dispositivo</li>
+            <li>Usar el flujo de liberación y restablecimiento en la app para desvincular el dispositivo actual de un perfil reclamado</li>
+            <li>Solicitar ayuda con privacidad, corrección o eliminación contactándonos en <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
+          </ul>
+          <p>Si estás en el EEE, el Reino Unido u otra jurisdicción con derechos de privacidad similares, también puedes tener el derecho de presentar una queja ante tu autoridad local de protección de datos.</p>
+          <p>Actualmente no usamos toma de decisiones automatizada ni elaboración de perfiles que produzcan efectos legales o similarmente significativos.</p>
+
+          <h2>9. Bases legales para el procesamiento (EEE/Reino Unido)</h2>
+          <p>Si aplica la ley de privacidad del EEE o del Reino Unido, generalmente nos basamos en las siguientes bases legales:</p>
+          <ul>
+            <li><strong>Ejecución de un contrato</strong>: para proporcionar la app, conectarte con tu grupo y mostrar tu actividad y contenido</li>
+            <li><strong>Consentimiento</strong>: cuando eliges otorgar acceso a la cámara o la biblioteca de fotos y subir contenido multimedia opcional</li>
+            <li><strong>Intereses legítimos</strong>: para asegurar, mantener, solucionar problemas y mejorar el servicio, y para prevenir el uso indebido</li>
+            <li><strong>Obligación legal</strong>: cuando el procesamiento es necesario para cumplir con la ley aplicable</li>
+          </ul>
+
+          <h2>10. Transferencias internacionales</h2>
+          <p>Tu información puede procesarse en países distintos al país donde vives, dependiendo de dónde operemos nuestros sistemas nosotros y nuestros proveedores de servicios. Cuando la ley lo exija, usaremos salvaguardas apropiadas para las transferencias internacionales de datos personales.</p>
+
+          <h2>11. Privacidad de los menores</h2>
+          <p>Gynus no está dirigido a menores de 13 años, ni a la edad mínima más alta requerida por la ley local. Si crees que un menor nos ha proporcionado información personal, contáctanos en <a href="mailto:support@gynus.fit">support@gynus.fit</a> para que podamos revisar y resolver el problema.</p>
+
+          <h2>12. Seguridad</h2>
+          <p>Usamos medidas administrativas, técnicas y organizativas razonables diseñadas para proteger la información personal. Sin embargo, ningún método de transmisión por internet o almacenamiento electrónico es completamente seguro, y no podemos garantizar seguridad absoluta.</p>
+
+          <h2>13. Cambios en esta política</h2>
+          <p>Podemos actualizar esta Política de Privacidad de vez en cuando. Si realizamos cambios materiales, actualizaremos la fecha de vigencia anterior y, cuando sea necesario, proporcionaremos aviso adicional.</p>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <nav class="footer-nav" aria-label="Pie de página">
+          <a href="./index.html">Inicio</a>
+          <a href="./privacy.html" aria-current="page">Política de Privacidad</a>
+          <a href="./terms.html">Términos de Servicio</a>
+          <a href="./accountInfo.html">Información de Cuenta</a>
+        </nav>
+      </footer>
+    </div>
   </div>
+
+  <script>
+    (function () {
+      var LANGS = ['en', 'pt', 'es'];
+
+      function detect() {
+        var saved = localStorage.getItem('lang');
+        if (saved && LANGS.indexOf(saved) !== -1) return saved;
+        var b = (navigator.language || '').toLowerCase();
+        if (b.startsWith('pt')) return 'pt';
+        if (b.startsWith('es')) return 'es';
+        return 'en';
+      }
+
+      function apply(lang) {
+        document.querySelectorAll('.lang-content').forEach(function (el) {
+          el.hidden = el.dataset.lang !== lang;
+          if (el.dataset.lang === lang && el.dataset.title) {
+            document.title = el.dataset.title;
+          }
+        });
+        document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang;
+        document.getElementById('lang-select').value = lang;
+        localStorage.setItem('lang', lang);
+      }
+
+      document.getElementById('lang-select').addEventListener('change', function (e) {
+        apply(e.target.value);
+      });
+
+      apply(detect());
+    })();
+  </script>
 </body>
 </html>
