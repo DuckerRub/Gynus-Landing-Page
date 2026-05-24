@@ -36,6 +36,9 @@ a {
 
 .page-main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: min(960px, calc(100% - 32px));
   margin: 0 auto;
   padding: 32px 0 24px;
@@ -128,6 +131,19 @@ ul {
   color: #ffffff;
 }
 
+.support-link {
+  display: block;
+  margin-top: 16px;
+  font-size: 0.875rem;
+  color: var(--muted);
+  text-decoration: none;
+  text-align: center;
+}
+
+.support-link:hover {
+  text-decoration: underline;
+}
+
 .back-link {
   display: inline-block;
   margin-bottom: 16px;
@@ -208,6 +224,10 @@ ul {
 
   .button-row {
     justify-content: flex-start;
+  }
+
+  .support-link {
+    text-align: left;
   }
 
   .button {
