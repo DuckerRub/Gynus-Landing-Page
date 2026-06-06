@@ -441,14 +441,28 @@ img {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 48px 20px 56px;
-    gap: 32px;
+    justify-content: center;
+    padding: 28px 20px;
+    gap: clamp(16px, 3vh, 30px);
+    /* Fill the screen below the language bar so both store badges stay above the fold */
+    min-height: calc(100vh - 52px);
+    min-height: calc(100svh - 52px);
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 10px;
+  }
+
+  .hero-title {
+    font-size: clamp(34px, 9vw, 56px);
+    margin-bottom: 14px;
   }
 
   .hero-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 22px;
   }
 
   .store-buttons {
@@ -456,9 +470,9 @@ img {
   }
 
   .hero-mascot {
-    width: 200px;
+    width: clamp(120px, 30vw, 190px);
     order: -1;
-    padding: 22px;
+    padding: clamp(16px, 4vw, 24px);
   }
 
   .cards-row {
@@ -473,6 +487,19 @@ img {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    gap: 14px;
+  }
+
+  .hero-mascot {
+    width: clamp(104px, 28vw, 140px);
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    margin-bottom: 18px;
+  }
+
   .store-badge {
     width: 100%;
     justify-content: center;
