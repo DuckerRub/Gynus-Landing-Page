@@ -29,8 +29,12 @@
     p { margin: 0 0 16px; line-height: 1.5; }
     .actions {
       display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 12px;
       margin-top: 20px;
+    }
+    .actions .button {
+      grid-column: 1 / -1;
     }
     a.button {
       display: inline-block;
@@ -47,18 +51,93 @@
       border-color: #F08460;
     }
     .hidden { display: none; }
+    .store-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #000;
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      height: 60px;
+      min-width: 192px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .store-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    .store-badge svg {
+      flex-shrink: 0;
+    }
+    .store-badge-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+      text-align: left;
+    }
+    .store-badge-sub {
+      font-size: 11px;
+      opacity: 0.85;
+      letter-spacing: 0.3px;
+      margin-bottom: 2px;
+    }
+    .store-badge-name {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+    }
+    @media (max-width: 520px) {
+      .actions {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <img src="./Imagotype.png">
   <div class="card">
     <h1 id="title">Open or install Gynus</h1>
     <p id="copy">If the app is installed, it should open now. Otherwise you can go to the store.</p>
 
     <div id="actions" class="actions hidden">
+      <a
+        id="appStore"
+        class="store-badge"
+        href="https://apps.apple.com/app/id6764876378"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Download on the App Store"
+      >
+        <svg width="28" height="34" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+        </svg>
+        <span class="store-badge-text">
+          <span class="store-badge-sub">Download on the</span>
+          <span class="store-badge-name">App Store</span>
+        </span>
+      </a>
+      <a
+        id="playStore"
+        class="store-badge"
+        href="https://play.google.com/store/apps/details?id=fit.gynus.app"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Get it on Google Play"
+      >
+        <svg width="28" height="34" viewBox="0 0 48 48" aria-hidden="true">
+          <path fill="#00A0FF" d="M6.7 4.2A3.1 3.1 0 0 0 5 7v34a3.1 3.1 0 0 0 1.7 2.8L27.5 24 6.7 4.2z" />
+          <path fill="#00C853" d="m27.5 24 7.2-6.9L10.8 3.5a3.2 3.2 0 0 0-4.1.7L27.5 24z" />
+          <path fill="#FFEA00" d="m34.7 17.1-7.2 6.9 7.2 6.9 7.9-4.5c2.2-1.3 2.2-4.5 0-5.8l-7.9-3.5z" />
+          <path fill="#FF3D00" d="M6.7 43.8a3.2 3.2 0 0 0 4.1.7l23.9-13.6-7.2-6.9L6.7 43.8z" />
+        </svg>
+        <span class="store-badge-text">
+          <span class="store-badge-sub">GET IT ON</span>
+          <span class="store-badge-name">Google Play</span>
+        </span>
+      </a>
       <a id="openApp" class="button primary" href="#">Open app</a>
-      <a id="appStore" class="button" href="https://apps.apple.com/app/id6764876378">Open App Store</a>
-      <a id="playStore" class="button" href="https://play.google.com/store/apps/details?id=fit.gynus.app">Open Google Play</a>
       <a id="home" class="button" href="/">Go to homepage</a>
     </div>
   </div>
