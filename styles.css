@@ -268,7 +268,7 @@ img {
   margin: 0 auto;
 }
 
-/* Primary feature grid — the workout-tracking section gets the widest,
+/* Primary feature grid: the workout-tracking section gets the widest,
    most detailed treatment because tracking is the core of the app. */
 .cards-grid {
   display: grid;
