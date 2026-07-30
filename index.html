@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gynus: Gym & Workout Groups</title>
+    <title>Gynus: Workout Tracker &amp; Gym Log</title>
     <meta
       name="description"
-      content="Gynus is a group workout habit app. Your group holds you accountable — post your workouts, track weekly goals, and grow together."
+      content="Gynus is a workout tracker that keeps you consistent. Build routines, log every set, track personal records and muscle progress — and stay accountable with friends."
     />
     <link rel="icon" type="image/png" href="./mascot.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,12 +32,11 @@
           <div class="hero-content">
             <p class="hero-eyebrow" data-i18n="kicker">Gynus</p>
             <h1 class="hero-title" id="hero-title">
-              <span data-i18n="titleLine1">Workout</span><br />
-              <span data-i18n="titleLine2">with friends.</span><br />
-              <span class="hero-title-accent" data-i18n="titleLine3">Share a goal.</span>
+              <span data-i18n="titleLine1">Get addicted to</span><br />
+              <span class="hero-title-accent" data-i18n="titleLine2">the gym.</span>
             </h1>
             <p class="hero-subtitle" data-i18n="lead">
-              Your group holds you accountable. Post your workouts, track weekly goals, and grow together.
+              Track every workout, watch your numbers climb, and keep the habit alive — on your own, or with friends keeping you honest.
             </p>
             <div class="store-buttons">
               <a
@@ -81,39 +80,103 @@
           </div> -->
         </section>
 
-        <section class="features" aria-labelledby="features-title">
-          <p class="features-eyebrow" data-i18n="featuresEyebrow">Why Gynus?</p>
-          <h2 class="features-title" id="features-title" data-i18n="featuresTitle">
-            Small groups. Real results.
+        <!-- Primary: workout tracking is the core of the app, so it gets the
+             widest section and the most detail. -->
+        <section class="features" aria-labelledby="track-title">
+          <p class="features-eyebrow" data-i18n="trackEyebrow">Workout tracking</p>
+          <h2 class="features-title" id="track-title" data-i18n="trackTitle">
+            Every set. Every record.
           </h2>
-          <div class="cards-row">
+          <p class="features-lead" data-i18n="trackLead">
+            Gynus is built around the training itself — walk in with a plan, log what you actually did, and see the proof that it's working.
+          </p>
+          <div class="cards-grid">
             <div class="feat-card">
-              <span class="feat-icon" aria-hidden="true">🏋️</span>
-              <p class="feat-title" data-i18n="feat1Title">Consistency</p>
-              <p class="feat-body" data-i18n="feat1Body">
-                Being consistent is hard, but it doesn't have to be lonely.
+              <span class="feat-icon" aria-hidden="true">📋</span>
+              <p class="feat-title" data-i18n="t1Title">Routines</p>
+              <p class="feat-body" data-i18n="t1Body">
+                Build reusable routines so you always know what to do next. Push day, leg day, whatever you run.
               </p>
             </div>
             <div class="feat-card">
-              <span class="feat-icon" aria-hidden="true">🤝</span>
-              <p class="feat-title" data-i18n="feat2Title">Accountability</p>
-              <p class="feat-body" data-i18n="feat2Body">
-                Join a group of people who also want to work out. Share a habit and keep each other accountable.
+              <span class="feat-icon" aria-hidden="true">✍️</span>
+              <p class="feat-title" data-i18n="t2Title">Log every set</p>
+              <p class="feat-body" data-i18n="t2Body">
+                Weight × reps, reps only, or timed holds. Your previous numbers sit right next to each set as you go.
+              </p>
+            </div>
+            <div class="feat-card">
+              <span class="feat-icon" aria-hidden="true">🏆</span>
+              <p class="feat-title" data-i18n="t3Title">Personal records</p>
+              <p class="feat-body" data-i18n="t3Body">
+                Heaviest weight, most reps, best volume, estimated 1RM — Gynus catches them for you.
               </p>
             </div>
             <div class="feat-card">
               <span class="feat-icon" aria-hidden="true">📈</span>
-              <p class="feat-title" data-i18n="feat3Title">Progress</p>
-              <p class="feat-body" data-i18n="feat3Body">
-                Watch your group grow, one week at a time. Streaks, weekly targets, and group milestones.
+              <p class="feat-title" data-i18n="t4Title">Muscle progress</p>
+              <p class="feat-body" data-i18n="t4Body">
+                See how each muscle group is trending, workout over workout, with charts per exercise.
               </p>
+            </div>
+            <div class="feat-card">
+              <span class="feat-icon" aria-hidden="true">⏱️</span>
+              <p class="feat-title" data-i18n="t5Title">Live sessions</p>
+              <p class="feat-body" data-i18n="t5Body">
+                Start a workout and the timer runs with you, even when you leave the app.
+              </p>
+            </div>
+            <div class="feat-card">
+              <span class="feat-icon" aria-hidden="true">📚</span>
+              <p class="feat-title" data-i18n="t6Title">Full history</p>
+              <p class="feat-body" data-i18n="t6Body">
+                Every finished workout stays in your history, with the full breakdown of what you lifted.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Secondary: motivation and groups share a row so the layout itself
+             reads as supporting the tracking section above. -->
+        <section class="section-alt" aria-labelledby="more-title">
+          <p class="features-eyebrow" data-i18n="moreEyebrow">And around it</p>
+          <h2 class="features-title" id="more-title" data-i18n="moreTitle">
+            The part that keeps you coming back.
+          </h2>
+          <div class="duo-row">
+            <div class="duo-card">
+              <p class="duo-eyebrow" data-i18n="motivEyebrow">Motivation</p>
+              <h3 class="duo-title" data-i18n="motivTitle">Your own corner</h3>
+              <p class="duo-body" data-i18n="motivBody">
+                A private space in the app for the reasons you started — nobody else can see it.
+              </p>
+              <ul class="duo-list">
+                <li data-i18n="motiv1">Write down why you're working out, and read it back when motivation dips</li>
+                <li data-i18n="motiv2">Keep a before photo, and add the after when you've earned it</li>
+                <li data-i18n="motiv3">Pin notes, photos, and moments worth remembering</li>
+                <li data-i18n="motiv4">Set reminders for the days and time you plan to train</li>
+              </ul>
+              <p class="privacy-note" data-i18n="motivNote">Only you can see this space.</p>
+            </div>
+            <div class="duo-card">
+              <p class="duo-eyebrow" data-i18n="groupsEyebrow">Social</p>
+              <h3 class="duo-title" data-i18n="groupsTitle">Better with friends</h3>
+              <p class="duo-body" data-i18n="groupsBody">
+                The original Gynus, still here: a small group that notices when you skip.
+              </p>
+              <ul class="duo-list">
+                <li data-i18n="group1">Create a group or join one with an invite link</li>
+                <li data-i18n="group2">Set a weekly target everyone commits to</li>
+                <li data-i18n="group3">Share workouts to the group feed, with comments and reactions</li>
+                <li data-i18n="group4">Track streaks, weekly completions, and group achievements</li>
+              </ul>
             </div>
           </div>
         </section>
 
         <section class="cta" aria-labelledby="cta-title">
           <h2 class="cta-title" id="cta-title" data-i18n="ctaTitle">Ready to start?</h2>
-          <p class="cta-sub" data-i18n="ctaSub">Free on iOS and Android.</p>
+          <p class="cta-sub" data-i18n="ctaSub">Free to start, on iOS and Android.</p>
           <div class="store-buttons">
             <a
               class="store-badge"
@@ -167,25 +230,48 @@
     <script>
       const translations = {
         en: {
-          page_title: 'Gynus: Gym & Workout Groups',
-          meta_desc: 'Gynus is a group workout habit app. Your group holds you accountable — post your workouts, track weekly goals, and grow together.',
+          page_title: 'Gynus: Workout Tracker & Gym Log',
+          meta_desc: 'Gynus is a workout tracker that keeps you consistent. Build routines, log every set, track personal records and muscle progress — and stay accountable with friends.',
           kicker: 'Gynus',
-          titleLine1: 'Workout',
-          titleLine2: 'with friends.',
-          titleLine3: 'Share a goal.',
-          lead: 'Your group holds you accountable. Post your workouts, track weekly goals, and grow together.',
+          titleLine1: 'Get addicted to',
+          titleLine2: 'the gym.',
+          lead: 'Track every workout, watch your numbers climb, and keep the habit alive — on your own, or with friends keeping you honest.',
           appStoreSub: 'Download on the',
           playStoreSub: 'GET IT ON',
-          featuresEyebrow: 'Why Gynus?',
-          featuresTitle: 'Small groups. Real results.',
-          feat1Title: 'Consistency',
-          feat1Body: "Being consistent is hard, but it doesn't have to be lonely.",
-          feat2Title: 'Accountability',
-          feat2Body: 'Join a group of people who also want to work out. Share a habit and keep each other accountable.',
-          feat3Title: 'Progress',
-          feat3Body: 'Watch your group grow, one week at a time. Streaks, weekly targets, and group milestones.',
+          trackEyebrow: 'Workout tracking',
+          trackTitle: 'Every set. Every record.',
+          trackLead: "Gynus is built around the training itself — walk in with a plan, log what you actually did, and see the proof that it's working.",
+          t1Title: 'Routines',
+          t1Body: 'Build reusable routines so you always know what to do next. Push day, leg day, whatever you run.',
+          t2Title: 'Log every set',
+          t2Body: 'Weight × reps, reps only, or timed holds. Your previous numbers sit right next to each set as you go.',
+          t3Title: 'Personal records',
+          t3Body: 'Heaviest weight, most reps, best volume, estimated 1RM — Gynus catches them for you.',
+          t4Title: 'Muscle progress',
+          t4Body: 'See how each muscle group is trending, workout over workout, with charts per exercise.',
+          t5Title: 'Live sessions',
+          t5Body: 'Start a workout and the timer runs with you, even when you leave the app.',
+          t6Title: 'Full history',
+          t6Body: 'Every finished workout stays in your history, with the full breakdown of what you lifted.',
+          moreEyebrow: 'And around it',
+          moreTitle: 'The part that keeps you coming back.',
+          motivEyebrow: 'Motivation',
+          motivTitle: 'Your own corner',
+          motivBody: 'A private space in the app for the reasons you started — nobody else can see it.',
+          motiv1: "Write down why you're working out, and read it back when motivation dips",
+          motiv2: "Keep a before photo, and add the after when you've earned it",
+          motiv3: 'Pin notes, photos, and moments worth remembering',
+          motiv4: 'Set reminders for the days and time you plan to train',
+          motivNote: 'Only you can see this space.',
+          groupsEyebrow: 'Social',
+          groupsTitle: 'Better with friends',
+          groupsBody: 'The original Gynus, still here: a small group that notices when you skip.',
+          group1: 'Create a group or join one with an invite link',
+          group2: 'Set a weekly target everyone commits to',
+          group3: 'Share workouts to the group feed, with comments and reactions',
+          group4: 'Track streaks, weekly completions, and group achievements',
           ctaTitle: 'Ready to start?',
-          ctaSub: 'Free on iOS and Android.',
+          ctaSub: 'Free to start, on iOS and Android.',
           support: 'support@gynus.fit',
           mascotAlt: 'Gynus mascot — a chicken lifting a dumbbell',
           privacy: 'Privacy Policy',
@@ -193,25 +279,48 @@
           account: 'Account Info',
         },
         pt: {
-          page_title: 'Gynus: Academia e Grupos de Treino',
-          meta_desc: 'Gynus é um app de hábito de treino em grupo. Seu grupo te mantém responsável — poste seus treinos, acompanhe metas semanais e cresçam juntos.',
+          page_title: 'Gynus: Registro de Treinos e Academia',
+          meta_desc: 'O Gynus é um app de registro de treinos que te mantém consistente. Monte fichas, registre cada série, acompanhe recordes e progresso muscular — e mantenha-se responsável com amigos.',
           kicker: 'Gynus',
-          titleLine1: 'Treine',
-          titleLine2: 'com amigos.',
-          titleLine3: 'Compartilhe uma meta.',
-          lead: 'Seu grupo te mantém responsável. Poste seus treinos, acompanhe metas semanais e cresçam juntos.',
+          titleLine1: 'Fique viciado',
+          titleLine2: 'na academia.',
+          lead: 'Registre cada treino, veja seus números subirem e mantenha o hábito vivo — sozinho ou com amigos te cobrando.',
           appStoreSub: 'Baixar na',
           playStoreSub: 'DISPONÍVEL NO',
-          featuresEyebrow: 'Por que Gynus?',
-          featuresTitle: 'Pequenos grupos. Resultados reais.',
-          feat1Title: 'Consistência',
-          feat1Body: 'Ser consistente é difícil, mas não precisa ser solitário.',
-          feat2Title: 'Responsabilidade',
-          feat2Body: 'Junte-se a um grupo de pessoas que também querem treinar. Compartilhem um hábito e mantenham-se responsáveis.',
-          feat3Title: 'Progresso',
-          feat3Body: 'Veja seu grupo crescer, uma semana de cada vez. Sequências, metas semanais e conquistas em grupo.',
+          trackEyebrow: 'Registro de treinos',
+          trackTitle: 'Cada série. Cada recorde.',
+          trackLead: 'O Gynus é feito em torno do treino em si — chegue com um plano, registre o que você realmente fez e veja a prova de que está funcionando.',
+          t1Title: 'Fichas',
+          t1Body: 'Monte fichas reutilizáveis para sempre saber o que fazer. Dia de peito, dia de perna, o que você treinar.',
+          t2Title: 'Registre cada série',
+          t2Body: 'Carga × repetições, só repetições ou tempo. Seus números anteriores aparecem ao lado de cada série.',
+          t3Title: 'Recordes pessoais',
+          t3Body: 'Maior carga, mais repetições, melhor volume, 1RM estimado — o Gynus detecta pra você.',
+          t4Title: 'Progresso muscular',
+          t4Body: 'Veja como cada grupo muscular evolui, treino após treino, com gráficos por exercício.',
+          t5Title: 'Treino ao vivo',
+          t5Body: 'Comece um treino e o cronômetro corre com você, mesmo fora do app.',
+          t6Title: 'Histórico completo',
+          t6Body: 'Todo treino finalizado fica no seu histórico, com o detalhamento do que você levantou.',
+          moreEyebrow: 'E ao redor disso',
+          moreTitle: 'A parte que faz você voltar.',
+          motivEyebrow: 'Motivação',
+          motivTitle: 'Seu canto',
+          motivBody: 'Um espaço privado no app para os motivos que te fizeram começar — ninguém mais vê.',
+          motiv1: 'Escreva por que você está treinando e releia quando a motivação cair',
+          motiv2: 'Guarde uma foto do antes e adicione o depois quando merecer',
+          motiv3: 'Fixe notas, fotos e momentos que valem lembrar',
+          motiv4: 'Configure lembretes para os dias e o horário em que você treina',
+          motivNote: 'Somente você pode ver este espaço.',
+          groupsEyebrow: 'Social',
+          groupsTitle: 'Melhor com amigos',
+          groupsBody: 'O Gynus original, ainda aqui: um grupo pequeno que percebe quando você falta.',
+          group1: 'Crie um grupo ou entre em um com um link de convite',
+          group2: 'Defina uma meta semanal com a qual todos se comprometem',
+          group3: 'Compartilhe treinos no feed do grupo, com comentários e reações',
+          group4: 'Acompanhe sequências, metas cumpridas e conquistas do grupo',
           ctaTitle: 'Pronto para começar?',
-          ctaSub: 'Grátis no iOS e Android.',
+          ctaSub: 'Grátis para começar, no iOS e Android.',
           support: 'support@gynus.fit',
           mascotAlt: 'Mascote do Gynus — um frango levantando um halter',
           privacy: 'Política de Privacidade',
@@ -219,25 +328,48 @@
           account: 'Informações da Conta',
         },
         es: {
-          page_title: 'Gynus: Gimnasio y Grupos de Entrenamiento',
-          meta_desc: 'Gynus es una app de hábito de entrenamiento en grupo. Tu grupo te hace responsable — publica tus entrenamientos, sigue metas semanales y crezcan juntos.',
+          page_title: 'Gynus: Registro de Entrenos y Gimnasio',
+          meta_desc: 'Gynus es una app de registro de entrenos que te mantiene constante. Crea rutinas, registra cada serie, sigue récords y progreso muscular — y mantente responsable con amigos.',
           kicker: 'Gynus',
-          titleLine1: 'Entrena',
-          titleLine2: 'con amigos.',
-          titleLine3: 'Compartan una meta.',
-          lead: 'Tu grupo te hace responsable. Publica tus entrenamientos, sigue metas semanales y crezcan juntos.',
+          titleLine1: 'Engánchate',
+          titleLine2: 'al gimnasio.',
+          lead: 'Registra cada entreno, mira crecer tus números y mantén el hábito vivo — solo o con amigos que te exijan.',
           appStoreSub: 'Descargar en',
           playStoreSub: 'DISPONIBLE EN',
-          featuresEyebrow: '¿Por qué Gynus?',
-          featuresTitle: 'Grupos pequeños. Resultados reales.',
-          feat1Title: 'Constancia',
-          feat1Body: 'Ser constante es difícil, pero no tiene que ser en soledad.',
-          feat2Title: 'Responsabilidad',
-          feat2Body: 'Únete a un grupo de personas que también quieren entrenar. Compartan un hábito y manténganse responsables.',
-          feat3Title: 'Progreso',
-          feat3Body: 'Mira a tu grupo crecer, una semana a la vez. Rachas, metas semanales y logros de grupo.',
+          trackEyebrow: 'Registro de entrenos',
+          trackTitle: 'Cada serie. Cada récord.',
+          trackLead: 'Gynus está construido alrededor del entrenamiento en sí — llega con un plan, registra lo que de verdad hiciste y comprueba que está funcionando.',
+          t1Title: 'Rutinas',
+          t1Body: 'Crea rutinas reutilizables para saber siempre qué toca. Día de pecho, día de pierna, lo que entrenes.',
+          t2Title: 'Registra cada serie',
+          t2Body: 'Peso × repeticiones, solo repeticiones o tiempo. Tus números anteriores aparecen junto a cada serie.',
+          t3Title: 'Récords personales',
+          t3Body: 'Mayor peso, más repeticiones, mejor volumen, 1RM estimado — Gynus los detecta por ti.',
+          t4Title: 'Progreso muscular',
+          t4Body: 'Mira cómo evoluciona cada grupo muscular, entreno tras entreno, con gráficas por ejercicio.',
+          t5Title: 'Entrenos en vivo',
+          t5Body: 'Empieza un entreno y el cronómetro corre contigo, incluso fuera de la app.',
+          t6Title: 'Historial completo',
+          t6Body: 'Cada entreno terminado queda en tu historial, con el desglose de lo que levantaste.',
+          moreEyebrow: 'Y alrededor',
+          moreTitle: 'Lo que te hace volver.',
+          motivEyebrow: 'Motivación',
+          motivTitle: 'Tu rincón',
+          motivBody: 'Un espacio privado en la app para las razones por las que empezaste — nadie más lo ve.',
+          motiv1: 'Escribe por qué entrenas y reléelo cuando baje la motivación',
+          motiv2: 'Guarda una foto del antes y añade el después cuando te lo hayas ganado',
+          motiv3: 'Fija notas, fotos y momentos que vale la pena recordar',
+          motiv4: 'Programa recordatorios para los días y la hora en que entrenas',
+          motivNote: 'Solo tú puedes ver este espacio.',
+          groupsEyebrow: 'Social',
+          groupsTitle: 'Mejor con amigos',
+          groupsBody: 'El Gynus original, sigue aquí: un grupo pequeño que nota cuando faltas.',
+          group1: 'Crea un grupo o únete con un enlace de invitación',
+          group2: 'Fija una meta semanal con la que todos se comprometen',
+          group3: 'Comparte entrenos en el feed del grupo, con comentarios y reacciones',
+          group4: 'Sigue rachas, semanas completadas y logros del grupo',
           ctaTitle: '¿Listo para empezar?',
-          ctaSub: 'Gratis en iOS y Android.',
+          ctaSub: 'Gratis para empezar, en iOS y Android.',
           support: 'support@gynus.fit',
           mascotAlt: 'Mascota de Gynus — un pollo levantando una mancuerna',
           privacy: 'Política de Privacidad',

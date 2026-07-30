@@ -252,12 +252,128 @@ img {
   line-height: 1.1;
 }
 
+.features-lead {
+  font-size: 17px;
+  color: var(--text-soft);
+  max-width: 620px;
+  margin: -32px auto 48px;
+  line-height: 1.6;
+}
+
 .cards-row {
   display: flex;
   gap: 22px;
   justify-content: center;
   max-width: 920px;
   margin: 0 auto;
+}
+
+/* Primary feature grid — the workout-tracking section gets the widest,
+   most detailed treatment because tracking is the core of the app. */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.cards-grid .feat-card {
+  text-align: left;
+}
+
+/* Secondary sections (motivation, groups) share one row so the layout
+   itself reads as "supporting act" next to the tracking grid above. */
+.section-alt {
+  background: var(--surface);
+  padding: 80px 24px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.duo-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.duo-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 32px 28px;
+}
+
+.duo-eyebrow {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 10px;
+}
+
+.duo-card:nth-child(2) .duo-eyebrow {
+  color: var(--accent-deep);
+}
+
+.duo-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.15;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.duo-body {
+  font-size: 15px;
+  color: var(--text-soft);
+  margin: 0 0 20px;
+}
+
+.duo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.duo-list li {
+  font-size: 15px;
+  color: var(--text-soft);
+  padding-left: 26px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.duo-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.duo-card:nth-child(2) .duo-list li::before {
+  background: var(--accent);
+}
+
+.privacy-note {
+  margin: 20px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
 }
 
 .feat-card {
@@ -480,9 +596,32 @@ img {
     max-width: 380px;
   }
 
+  .cards-grid,
+  .duo-row {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .features-lead {
+    font-size: 16px;
+    margin: -24px auto 36px;
+  }
+
+  .duo-title {
+    font-size: 26px;
+  }
+
   .features,
+  .section-alt,
   .cta {
     padding: 56px 20px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 761px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 680px;
   }
 }
 
