@@ -551,6 +551,110 @@ img {
   border-color: var(--accent);
 }
 
+/* ─── Plan import handoff ─── */
+
+.import-main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 56px 24px;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(240, 132, 96, 0.25), transparent 30%),
+    linear-gradient(135deg, var(--primary) 0%, var(--primary-deep) 100%);
+}
+
+.import-card {
+  width: min(620px, 100%);
+  padding: 44px;
+  border-radius: 28px;
+  background: var(--surface);
+  border-top: 5px solid var(--accent);
+  box-shadow: 0 24px 70px rgba(6, 18, 35, 0.3);
+  text-align: center;
+}
+
+.import-logo {
+  width: 172px;
+  height: auto;
+  margin: 0 auto 22px;
+  border-radius: 0;
+}
+
+.import-eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent-deep);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.import-title {
+  margin: 0 0 16px;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(42px, 7vw, 60px);
+  font-weight: 300;
+  line-height: 1.05;
+}
+
+.import-copy {
+  max-width: 460px;
+  margin: 0 auto 24px;
+  color: var(--text-soft);
+  font-size: 17px;
+}
+
+.import-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 28px;
+  margin-bottom: 20px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.import-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(60, 106, 177, 0.2);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: import-spin 0.8s linear infinite;
+}
+
+.import-spinner[hidden] {
+  display: none;
+}
+
+@keyframes import-spin {
+  to { transform: rotate(360deg); }
+}
+
+.import-open.button {
+  display: block;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 17px;
+}
+
+.import-install {
+  max-width: 420px;
+  margin: 20px auto 18px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.import-store-buttons {
+  justify-content: center;
+}
+
 /* ─── Responsive ─── */
 
 @media (max-width: 760px) {
@@ -642,5 +746,23 @@ img {
   .store-badge {
     width: 100%;
     justify-content: center;
+  }
+
+  .import-main {
+    padding: 24px 16px;
+  }
+
+  .import-card {
+    padding: 30px 20px;
+    border-radius: 22px;
+  }
+
+  .import-logo {
+    width: 142px;
+    margin-bottom: 18px;
+  }
+
+  .import-copy {
+    font-size: 15px;
   }
 }
