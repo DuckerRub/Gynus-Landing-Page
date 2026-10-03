@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Gynus — Import your workout plan</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 560px; margin: 8vh auto; padding: 24px; line-height: 1.6; }
+    .brand { font-weight: 800; letter-spacing: .16em; }
+    h1 { font-size: 2.25rem; line-height: 1.15; }
+    a { color: inherit; }
+    .action { display: block; border: 1px solid; border-radius: 14px; padding: 14px 18px; margin: 14px 0; text-align: center; text-decoration: none; font-weight: 650; }
+    footer { margin-top: 36px; display: flex; gap: 20px; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <p class="brand">GYNUS</p>
+  <h1 data-copy="title">Make your plan your next workout.</h1>
+  <p data-copy="intro">Copy the plan JSON from your chat, open Gynus, paste it into Import a plan, and tap Save.</p>
+  <a class="action" data-action="open" href="gynus://import-plan?source=chatgpt-plugin" data-copy="open">Open Gynus</a>
+  <p data-copy="install">New to Gynus? Install the app, then return to your chat and open this link again.</p>
+  <a class="action" data-action="ios" href="https://apps.apple.com/app/id6764876378" data-copy="ios">Get Gynus for iPhone</a>
+  <a class="action" data-action="android" href="https://play.google.com/store/apps/details?id=fit.gynus.app" data-copy="android">Get Gynus for Android</a>
+  <footer><a href="https://gynus.fit/privacy.html" data-copy="privacy">Privacy</a><a href="https://gynus.fit/terms.html" data-copy="terms">Terms</a></footer>
+  <script>
+    const translations = {
+      pt: { title: 'Transforme seu plano no próximo treino.', intro: 'Copie o JSON do plano na conversa, abra o Gynus, cole em Importar um plano e toque em Salvar.', open: 'Abrir Gynus', install: 'Primeira vez no Gynus? Instale o app, volte à conversa e abra este link novamente.', ios: 'Baixar Gynus para iPhone', android: 'Baixar Gynus para Android', privacy: 'Privacidade', terms: 'Termos' },
+      es: { title: 'Convierte tu plan en tu próximo entreno.', intro: 'Copia el JSON del plan de la conversación, abre Gynus, pégalo en Importar un plan y toca Guardar.', open: 'Abrir Gynus', install: '¿Primera vez en Gynus? Instala la app, vuelve a la conversación y abre este enlace otra vez.', ios: 'Descargar Gynus para iPhone', android: 'Descargar Gynus para Android', privacy: 'Privacidad', terms: 'Términos' }
+    };
+    const language = (navigator.language || 'en').split('-')[0];
+    if (translations[language]) {
+      document.documentElement.lang = language;
+      for (const node of document.querySelectorAll('[data-copy]')) node.textContent = translations[language][node.dataset.copy];
+    }
+    const source = new URLSearchParams(location.search).get('source') === 'chatgpt-plugin' ? 'chatgpt-plugin' : 'website';
+    document.querySelector('[data-action="open"]').href = `gynus://import-plan?source=${source}`;
+    function track(name, properties) {
+      window.dispatchEvent(new CustomEvent('gynus-referral', { detail: { name, properties } }));
+      if (window.posthog && typeof window.posthog.capture === 'function') window.posthog.capture(name, properties);
+    }
+    track('plan_import.landing_viewed', { source });
+    for (const node of document.querySelectorAll('[data-action]')) node.addEventListener('click', () => {
+      track('plan_import.landing_action', { source, action: node.dataset.action });
+    });
+  </script>
+</body>
+</html>
