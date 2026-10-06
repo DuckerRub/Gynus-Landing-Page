@@ -1,7 +1,11 @@
 User-agent: OAI-SearchBot
+Disallow: /docs/
+Disallow: /scripts/
 Allow: /
 
 User-agent: *
+Disallow: /docs/
+Disallow: /scripts/
 Allow: /
 
 Sitemap: https://gynus.fit/sitemap.xml

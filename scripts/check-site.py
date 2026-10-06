@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, unquote
 import xml.etree.ElementTree as ET
+from urllib.robotparser import RobotFileParser
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://gynus.fit'
@@ -31,6 +32,13 @@ def check():
  assert not (ROOT/'join-group').exists(), 'Do not shadow the deep-link fallback'
  urls=[n.text for n in ET.parse(ROOT/'sitemap.xml').iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
  assert len(urls)==len(set(urls))
+ for f in ROOT.rglob('*.html'):
+  if '.git' in f.parts: continue
+  page=Page(f.read_text())
+  if any('noindex' in a.get('content','') for a in page.find('meta',name='robots')): continue
+  path='/' + f.relative_to(ROOT).as_posix()
+  if path.endswith('/index.html'): path=path[:-10]
+  assert BASE+path in urls, f'Indexable page missing from sitemap: {f}'
  titles=set(); descriptions=set()
  for url in urls:
   assert url.startswith(BASE+'/') and not urlsplit(url).query
@@ -66,13 +74,19 @@ def check():
     if resolved.fragment and target.suffix=='.html':
      assert any(a.get('id')==resolved.fragment for _,a in Page(target.read_text()).tags),f'{path}: missing fragment {href}'
  robots=(ROOT/'robots.txt').read_text()
- assert 'User-agent: OAI-SearchBot\nAllow: /' in robots and 'User-agent: *\nAllow: /' in robots
+ assert 'User-agent: OAI-SearchBot' in robots and 'User-agent: *' in robots
  assert f'Sitemap: {BASE}/sitemap.xml' in robots
+ policy=RobotFileParser(); policy.parse(robots.splitlines())
+ for agent in ['OAI-SearchBot','GPTBot','Googlebot','bingbot','Claude-SearchBot','PerplexityBot']:
+  assert all(policy.can_fetch(agent,url) for url in urls), f'Crawler blocked: {agent}'
+  assert not policy.can_fetch(agent,BASE+'/docs/launch-kit.md'), f'Internal docs unexpectedly crawlable: {agent}'
+ for handoff in ['404.html','import-plan/index.html']:
+  assert any('noindex' in a.get('content','') for a in Page((ROOT/handoff).read_text()).find('meta',name='robots'))
  print(f'PASS: {len(urls)} pages; metadata, language, links, structured data, sitemap, and protected files')
  return urls
 
 def live(host,urls):
- paths=[urlsplit(u).path for u in urls]+['/import-plan/','/robots.txt','/sitemap.xml','/.well-known/apple-app-site-association','/.well-known/assetlinks.json']
+ paths=[urlsplit(u).path for u in urls]+['/index.html','/?ref=seo-check','/pt-br/index.html','/es/index.html','/import-plan/','/robots.txt','/sitemap.xml','/.well-known/apple-app-site-association','/.well-known/assetlinks.json']
  tests=[(p,200) for p in paths]+[(p,404) for p in ['/join-group/ABCDEFGHIJ','/join-group/'+'A'*32+'/?source=check','/join-group/short','/not-a-real-page-seo-check']]
  for path,status in tests:
   try: response=urllib.request.urlopen(host.rstrip('/')+path,timeout=25)
