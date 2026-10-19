@@ -39,7 +39,7 @@
         <a class="back-link" href="./index.html">Home</a>
         <section class="panel legal-panel">
           <h1>Privacy Policy</h1>
-          <p class="meta">Effective date: July 30, 2026</p>
+          <p class="meta">Effective date: October 19, 2026</p>
 
           <p>This Privacy Policy describes how <strong>Gynus</strong> is operated by <strong>Kedson Alves da Silva</strong> ("we," "us," or "our") and how we collect, use, disclose, and protect information when you use the Gynus mobile application and related services.</p>
 
@@ -69,6 +69,7 @@
             <li>The sets you record for each exercise, including weight, repetitions, or duration, and which sets you completed</li>
             <li>Personal records derived from your sets, such as heaviest weight, most repetitions, best volume, and estimated one-rep max</li>
             <li>Progress data derived from your workouts, including per-exercise and per-muscle-group trends over time</li>
+            <li>Body measurements you choose to enter, such as body weight, body-fat percentage, and circumferences, with the dates of your entries</li>
           </ul>
 
           <h3>C. Private motivation information ("My area")</h3>
@@ -108,8 +109,9 @@
             <li>Crash and error reports, including uncaught exceptions and unhandled errors, with technical diagnostic details</li>
             <li>Device and app context, such as platform, app version, and a generated analytics identifier</li>
             <li>Feature flag assignments used to enable or test features</li>
+            <li>Answers you choose to submit in feedback surveys, and workout usage metrics such as exercise, set, round, and personal-record counts</li>
           </ul>
-          <p>We use PostHog for this. We use it to understand how Gynus is used, fix crashes, and improve the app.</p>
+          <p>We use PostHog to understand how Gynus is used, collect feedback, fix crashes, and improve the app. When you sign in, we associate analytics with your Gynus profile ID and provide your display name and email address. These analytics are therefore not anonymous. This information is separate from the installation attribution described below.</p>
 
           <h3>H. Moderation and safety information</h3>
           <ul>
@@ -136,6 +138,10 @@
           <h3>K. Information we do not collect</h3>
           <p>Gynus does not request your precise location, contacts, microphone, or advertising identifier, and it does not include third-party advertising SDKs. Gynus does not connect to Apple Health, Google Fit, or Health Connect, and does not read health or fitness data from your device. The workout information in Gynus is only what you enter yourself.</p>
 
+          <h3>L. Advertising measurement on iOS</h3>
+          <p>Starting with version 2.5.6 on iOS, Gynus uses Apple's SKAdNetwork to help measure whether our Facebook and Instagram campaigns lead to app installations. When you first open the app, we register installation attribution with iOS. Apple determines whether an installation is eligible and may send an attribution report to the advertising network, including Meta. We receive aggregate campaign reporting that may be delayed and limited by Apple's privacy rules.</p>
+          <p>This measurement does not request App Tracking Transparency permission or access the advertising identifier (IDFA). Gynus does not include the Meta SDK or send Meta App Events. We register installation attribution only; we do not encode in-app actions or purchases. This measurement does not send your Gynus account ID, email, workout or health information, photos, captions, or purchase history to Meta.</p>
+
           <h2>4. How We Use Information</h2>
           <p>We use the information above to:</p>
           <ul>
@@ -150,6 +156,7 @@
             <li>Synchronize activity across group members in near real time</li>
             <li>Maintain app security, detect misuse, debug errors, and improve reliability</li>
             <li>Understand how the app is used so we can improve it</li>
+            <li>Evaluate our app-install campaigns using aggregate SKAdNetwork attribution reports</li>
             <li>Filter objectionable text, review reports, process blocks, enforce our terms, remove offending content, and restrict or eject abusive users</li>
             <li>Comply with legal obligations and enforce our terms or community rules</li>
           </ul>
@@ -194,7 +201,7 @@
             <li><strong>RevenueCat</strong>: purchase and subscription entitlement management</li>
             <li><strong>Apple App Store and Google Play</strong>: payment processing for paid plans</li>
             <li><strong>Expo push notification service, together with Apple Push Notification service and Firebase Cloud Messaging</strong>: delivery of reminders and notifications to your device</li>
-            <li><strong>PostHog</strong>: product analytics, crash and error reporting, and feature flags</li>
+            <li><strong>PostHog</strong>: product analytics associated with your profile, feedback surveys, crash and error reporting, and feature flags</li>
           </ul>
 
           <h3>D. Important photo-storage note</h3>
@@ -211,6 +218,9 @@
             <li>Investigate fraud, abuse, or security issues</li>
           </ul>
 
+          <h3>G. Installation attribution</h3>
+          <p>For the iOS measurement described in Section 3.L, Apple sends eligible attribution reports to the advertising network. This is separate from the account and content processing performed by our app service providers above.</p>
+
           <h2>7. Data Retention</h2>
           <p>We retain personal information for as long as reasonably necessary to operate Gynus, keep your training history available to you, comply with legal obligations, resolve disputes, and enforce agreements.</p>
           <p>In the current app build:</p>
@@ -220,6 +230,8 @@
             <li>Deleting a routine or a memory in the app removes it; deleting your account removes the associated data as described in Section 8</li>
             <li>Reminder delivery records and moderation records may be retained for as long as needed for reliability, safety, and legal purposes</li>
           </ul>
+
+          <p>Deleting your Gynus account does not automatically erase records already held by PostHog, RevenueCat, or the app stores. For requests about these records, contact us at <a href="mailto:support@gynus.fit">support@gynus.fit</a>. Some records may be retained when required by law or needed for security and resolving transactions.</p>
 
           <h2>8. Your Choices and Rights</h2>
           <p>Depending on where you live, you may have rights to request access to, correction of, deletion of, or export of your personal information, and to object to or restrict certain processing.</p>
@@ -231,8 +243,9 @@
             <li>Turn workout reminders off, or change the days and time, in the app</li>
             <li>Control camera, photo library, and notification permissions in your device settings</li>
             <li>Manage or cancel a paid plan through your App Store or Google Play account settings</li>
-            <li>Request deletion of your account and associated data, or ask for privacy help or correction, by contacting us at <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
+            <li>Delete your account from Profile settings in the app to request removal of your Gynus account data and uploaded media. You can also request access, correction, export, deletion, or privacy help at <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
           </ul>
+          <p>Deleting your Gynus account does not cancel an App Store or Google Play subscription. Manage or cancel your subscription through the store where you purchased it.</p>
           <p>If you are in the EEA, UK, or another jurisdiction with similar privacy rights, you may also have the right to lodge a complaint with your local data protection authority.</p>
           <p>We do not currently use automated decision-making or profiling that produces legal or similarly significant effects.</p>
 
@@ -274,7 +287,7 @@
         <a class="back-link" href="./index.html">Início</a>
         <section class="panel legal-panel">
           <h1>Política de Privacidade</h1>
-          <p class="meta">Data de vigência: 30 de julho de 2026</p>
+          <p class="meta">Data de vigência: 19 de outubro de 2026</p>
 
           <p>Esta Política de Privacidade descreve como o <strong>Gynus</strong> é operado por <strong>Kedson Alves da Silva</strong> ("nós", "nos" ou "nosso") e como coletamos, usamos, divulgamos e protegemos informações quando você usa o aplicativo móvel Gynus e os serviços relacionados.</p>
 
@@ -304,6 +317,7 @@
             <li>As séries que você registra para cada exercício, incluindo carga, repetições ou duração, e quais séries você concluiu</li>
             <li>Recordes pessoais derivados das suas séries, como maior carga, mais repetições, melhor volume e 1RM estimado</li>
             <li>Dados de progresso derivados dos seus treinos, incluindo tendências por exercício e por grupo muscular ao longo do tempo</li>
+            <li>Medidas corporais que você escolhe inserir, como peso, percentual de gordura e circunferências, com as datas dos registros</li>
           </ul>
 
           <h3>C. Informações privadas de motivação ("Minha área")</h3>
@@ -343,8 +357,9 @@
             <li>Relatórios de falhas e erros, incluindo exceções não tratadas, com detalhes técnicos de diagnóstico</li>
             <li>Contexto do dispositivo e do app, como plataforma, versão do app e um identificador de análise gerado</li>
             <li>Atribuições de feature flags usadas para habilitar ou testar recursos</li>
+            <li>Respostas que você escolhe enviar em pesquisas de feedback e métricas de uso dos treinos, como contagens de exercícios, séries, rodadas e recordes pessoais</li>
           </ul>
-          <p>Usamos o PostHog para isso. Utilizamos essas informações para entender como o Gynus é usado, corrigir falhas e melhorar o app.</p>
+          <p>Usamos o PostHog para entender como o Gynus é usado, coletar feedback, corrigir falhas e melhorar o app. Quando você entra na sua conta, associamos as análises ao seu ID de perfil do Gynus e fornecemos seu nome de exibição e endereço de e-mail. Portanto, essas análises não são anônimas. Essas informações são separadas da atribuição de instalações descrita abaixo.</p>
 
           <h3>H. Informações de moderação e segurança</h3>
           <ul>
@@ -371,6 +386,10 @@
           <h3>K. Informações que não coletamos</h3>
           <p>O Gynus não solicita sua localização precisa, contatos, microfone ou identificador de publicidade, e não inclui SDKs de publicidade de terceiros. O Gynus não se conecta ao Apple Health, ao Google Fit nem ao Health Connect, e não lê dados de saúde ou condicionamento físico do seu dispositivo. As informações de treino no Gynus são apenas aquelas que você mesmo insere.</p>
 
+          <h3>L. Medição de anúncios no iOS</h3>
+          <p>A partir da versão 2.5.6 no iOS, o Gynus usa o SKAdNetwork da Apple para ajudar a medir se nossas campanhas no Facebook e no Instagram levam a instalações do app. Quando você abre o app pela primeira vez, registramos a atribuição da instalação no iOS. A Apple determina se uma instalação é elegível e pode enviar um relatório de atribuição à rede de anúncios, incluindo a Meta. Recebemos relatórios agregados das campanhas, que podem ter atraso e limitações conforme as regras de privacidade da Apple.</p>
+          <p>Essa medição não solicita a permissão de Transparência no Rastreamento de Apps (ATT) nem acessa o identificador de publicidade (IDFA). O Gynus não inclui o SDK da Meta nem envia eventos pelo Meta App Events. Registramos apenas atribuição de instalação; não codificamos ações dentro do app ou compras. Essa medição não envia à Meta seu ID da conta Gynus, e-mail, informações de treino ou saúde, fotos, legendas ou histórico de compras.</p>
+
           <h2>4. Como usamos as informações</h2>
           <p>Usamos as informações acima para:</p>
           <ul>
@@ -385,6 +404,7 @@
             <li>Sincronizar a atividade entre os membros do grupo em quase tempo real</li>
             <li>Manter a segurança do app, detectar uso indevido, depurar erros e melhorar a confiabilidade</li>
             <li>Entender como o app é usado para que possamos melhorá-lo</li>
+            <li>Avaliar nossas campanhas de instalação do app usando relatórios agregados de atribuição do SKAdNetwork</li>
             <li>Filtrar textos impróprios, revisar denúncias, processar bloqueios, aplicar nossos termos, remover conteúdo ofensivo e restringir ou expulsar usuários abusivos</li>
             <li>Cumprir obrigações legais e aplicar nossos termos ou regras da comunidade</li>
           </ul>
@@ -429,7 +449,7 @@
             <li><strong>RevenueCat</strong>: gerenciamento de compras e direitos de assinatura</li>
             <li><strong>Apple App Store e Google Play</strong>: processamento de pagamentos dos planos pagos</li>
             <li><strong>Serviço de notificações push da Expo, junto com o Apple Push Notification service e o Firebase Cloud Messaging</strong>: entrega de lembretes e notificações ao seu dispositivo</li>
-            <li><strong>PostHog</strong>: análise de produto, relatórios de falhas e erros e feature flags</li>
+            <li><strong>PostHog</strong>: análise de produto associada ao seu perfil, pesquisas de feedback, relatórios de falhas e erros e feature flags</li>
           </ul>
 
           <h3>D. Nota importante sobre o armazenamento de fotos</h3>
@@ -446,6 +466,9 @@
             <li>Investigar fraude, abuso ou problemas de segurança</li>
           </ul>
 
+          <h3>G. Atribuição de instalações</h3>
+          <p>Para a medição no iOS descrita na Seção 3.L, a Apple envia relatórios de atribuição elegíveis à rede de anúncios. Esse processo é separado do tratamento de contas e conteúdo realizado pelos provedores de serviços do app listados acima.</p>
+
           <h2>7. Retenção de dados</h2>
           <p>Retemos informações pessoais pelo tempo razoavelmente necessário para operar o Gynus, manter seu histórico de treinos disponível para você, cumprir obrigações legais, resolver disputas e aplicar acordos.</p>
           <p>Na versão atual do app:</p>
@@ -455,6 +478,8 @@
             <li>Excluir uma ficha ou uma memória no app a remove; excluir sua conta remove os dados associados conforme descrito na Seção 8</li>
             <li>Registros de entrega de lembretes e registros de moderação podem ser retidos pelo tempo necessário para fins de confiabilidade, segurança e obrigações legais</li>
           </ul>
+
+          <p>Excluir sua conta do Gynus não apaga automaticamente os registros já mantidos pelo PostHog, pelo RevenueCat ou pelas lojas de aplicativos. Para solicitações sobre esses registros, entre em contato em <a href="mailto:support@gynus.fit">support@gynus.fit</a>. Alguns registros podem ser mantidos quando exigido por lei ou necessários para segurança e resolução de transações.</p>
 
           <h2>8. Suas escolhas e direitos</h2>
           <p>Dependendo de onde você mora, você pode ter direitos de solicitar acesso, correção, exclusão ou exportação de suas informações pessoais, e de se opor ou restringir determinados processamentos.</p>
@@ -466,8 +491,9 @@
             <li>Desativar os lembretes de treino, ou alterar os dias e o horário, no app</li>
             <li>Controlar as permissões de câmera, biblioteca de fotos e notificações nas configurações do dispositivo</li>
             <li>Gerenciar ou cancelar um plano pago nas configurações da sua conta na App Store ou no Google Play</li>
-            <li>Solicitar a exclusão da sua conta e dos dados associados, ou pedir ajuda com privacidade ou correção, entrando em contato conosco em <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
+            <li>Excluir sua conta nas configurações do Perfil no app para solicitar a remoção dos dados da conta Gynus e das mídias enviadas. Você também pode solicitar acesso, correção, exportação, exclusão ou ajuda com privacidade em <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
           </ul>
+          <p>Excluir sua conta do Gynus não cancela uma assinatura da App Store ou do Google Play. Gerencie ou cancele sua assinatura na loja em que realizou a compra.</p>
           <p>Se você estiver no EEE, no Reino Unido ou em outra jurisdição com direitos de privacidade semelhantes, também poderá ter o direito de registrar uma reclamação junto à sua autoridade local de proteção de dados.</p>
           <p>Atualmente, não utilizamos tomada de decisão automatizada ou criação de perfis que produzam efeitos jurídicos ou similarmente significativos.</p>
 
@@ -509,7 +535,7 @@
         <a class="back-link" href="./index.html">Inicio</a>
         <section class="panel legal-panel">
           <h1>Política de Privacidad</h1>
-          <p class="meta">Fecha de vigencia: 30 de julio de 2026</p>
+          <p class="meta">Fecha de vigencia: 19 de octubre de 2026</p>
 
           <p>Esta Política de Privacidad describe cómo <strong>Gynus</strong> es operado por <strong>Kedson Alves da Silva</strong> ("nosotros", "nos" o "nuestro") y cómo recopilamos, usamos, divulgamos y protegemos información cuando usas la aplicación móvil Gynus y los servicios relacionados.</p>
 
@@ -539,6 +565,7 @@
             <li>Las series que registras para cada ejercicio, incluidos peso, repeticiones o duración, y qué series completaste</li>
             <li>Récords personales derivados de tus series, como mayor peso, más repeticiones, mejor volumen y 1RM estimado</li>
             <li>Datos de progreso derivados de tus entrenos, incluidas tendencias por ejercicio y por grupo muscular a lo largo del tiempo</li>
+            <li>Medidas corporales que eliges introducir, como peso, porcentaje de grasa y circunferencias, con las fechas de tus registros</li>
           </ul>
 
           <h3>C. Información privada de motivación ("Mi área")</h3>
@@ -578,8 +605,9 @@
             <li>Informes de fallos y errores, incluidas excepciones no controladas, con detalles técnicos de diagnóstico</li>
             <li>Contexto del dispositivo y de la app, como plataforma, versión de la app y un identificador de análisis generado</li>
             <li>Asignaciones de feature flags usadas para habilitar o probar funciones</li>
+            <li>Respuestas que eliges enviar en encuestas de opinión y métricas de uso de los entrenos, como recuentos de ejercicios, series, rondas y récords personales</li>
           </ul>
-          <p>Usamos PostHog para esto. Lo utilizamos para entender cómo se usa Gynus, corregir fallos y mejorar la app.</p>
+          <p>Usamos PostHog para entender cómo se usa Gynus, recoger opiniones, corregir fallos y mejorar la app. Cuando inicias sesión, asociamos los análisis con tu ID de perfil de Gynus y proporcionamos tu nombre visible y correo electrónico. Por tanto, estos análisis no son anónimos. Esta información es independiente de la atribución de instalaciones descrita a continuación.</p>
 
           <h3>H. Información de moderación y seguridad</h3>
           <ul>
@@ -606,6 +634,10 @@
           <h3>K. Información que no recopilamos</h3>
           <p>Gynus no solicita tu ubicación precisa, contactos, micrófono o identificador publicitario, y no incluye SDKs de publicidad de terceros. Gynus no se conecta a Apple Health, Google Fit ni Health Connect, y no lee datos de salud o actividad física de tu dispositivo. La información de entreno en Gynus es únicamente la que tú mismo introduces.</p>
 
+          <h3>L. Medición de anuncios en iOS</h3>
+          <p>A partir de la versión 2.5.6 en iOS, Gynus usa SKAdNetwork de Apple para ayudar a medir si nuestras campañas en Facebook e Instagram generan instalaciones de la app. Cuando abres la app por primera vez, registramos la atribución de la instalación en iOS. Apple determina si una instalación es apta y puede enviar un informe de atribución a la red publicitaria, incluida Meta. Recibimos informes agregados de las campañas que pueden llegar con retraso y limitaciones conforme a las reglas de privacidad de Apple.</p>
+          <p>Esta medición no solicita permiso de Transparencia en el Rastreo de Apps (ATT) ni accede al identificador publicitario (IDFA). Gynus no incluye el SDK de Meta ni envía eventos mediante Meta App Events. Solo registramos atribución de instalaciones; no codificamos acciones dentro de la app ni compras. Esta medición no envía a Meta tu ID de cuenta de Gynus, correo electrónico, información de entrenos o salud, fotos, descripciones ni historial de compras.</p>
+
           <h2>4. Cómo usamos la información</h2>
           <p>Usamos la información anterior para:</p>
           <ul>
@@ -620,6 +652,7 @@
             <li>Sincronizar la actividad entre miembros del grupo en tiempo casi real</li>
             <li>Mantener la seguridad de la app, detectar uso indebido, depurar errores y mejorar la confiabilidad</li>
             <li>Entender cómo se usa la app para poder mejorarla</li>
+            <li>Evaluar nuestras campañas de instalación de la app mediante informes agregados de atribución de SKAdNetwork</li>
             <li>Filtrar texto objetable, revisar reportes, procesar bloqueos, hacer cumplir nuestros términos, eliminar contenido ofensivo y restringir o expulsar usuarios abusivos</li>
             <li>Cumplir con obligaciones legales y hacer cumplir nuestros términos o reglas de la comunidad</li>
           </ul>
@@ -664,7 +697,7 @@
             <li><strong>RevenueCat</strong>: gestión de compras y derechos de suscripción</li>
             <li><strong>Apple App Store y Google Play</strong>: procesamiento de pagos de los planes de pago</li>
             <li><strong>Servicio de notificaciones push de Expo, junto con Apple Push Notification service y Firebase Cloud Messaging</strong>: entrega de recordatorios y notificaciones a tu dispositivo</li>
-            <li><strong>PostHog</strong>: análisis de producto, informes de fallos y errores, y feature flags</li>
+            <li><strong>PostHog</strong>: análisis de producto asociados a tu perfil, encuestas de opinión, informes de fallos y errores, y feature flags</li>
           </ul>
 
           <h3>D. Nota importante sobre el almacenamiento de fotos</h3>
@@ -681,6 +714,9 @@
             <li>Investigar fraude, abuso o problemas de seguridad</li>
           </ul>
 
+          <h3>G. Atribución de instalaciones</h3>
+          <p>Para la medición en iOS descrita en la Sección 3.L, Apple envía informes de atribución aptos a la red publicitaria. Este proceso es independiente del tratamiento de cuentas y contenido realizado por los proveedores de servicios de la app enumerados anteriormente.</p>
+
           <h2>7. Retención de datos</h2>
           <p>Conservamos información personal durante el tiempo razonablemente necesario para operar Gynus, mantener tu historial de entrenos disponible para ti, cumplir con obligaciones legales, resolver disputas y hacer cumplir acuerdos.</p>
           <p>En la versión actual de la app:</p>
@@ -690,6 +726,8 @@
             <li>Eliminar una rutina o un recuerdo en la app lo borra; eliminar tu cuenta borra los datos asociados según lo descrito en la Sección 8</li>
             <li>Los registros de entrega de recordatorios y los registros de moderación pueden conservarse durante el tiempo necesario por motivos de fiabilidad, seguridad y obligaciones legales</li>
           </ul>
+
+          <p>Eliminar tu cuenta de Gynus no borra automáticamente los registros que ya conservan PostHog, RevenueCat o las tiendas de aplicaciones. Para solicitudes sobre estos registros, escribe a <a href="mailto:support@gynus.fit">support@gynus.fit</a>. Algunos registros pueden conservarse cuando lo exija la ley o sean necesarios para la seguridad y la resolución de transacciones.</p>
 
           <h2>8. Tus opciones y derechos</h2>
           <p>Dependiendo de dónde vives, puedes tener derechos para solicitar acceso, corrección, eliminación o exportación de tu información personal, y para oponerte o restringir cierto procesamiento.</p>
@@ -701,8 +739,9 @@
             <li>Desactivar los recordatorios de entreno, o cambiar los días y la hora, en la app</li>
             <li>Controlar los permisos de cámara, biblioteca de fotos y notificaciones en la configuración de tu dispositivo</li>
             <li>Gestionar o cancelar un plan de pago desde la configuración de tu cuenta de App Store o Google Play</li>
-            <li>Solicitar la eliminación de tu cuenta y los datos asociados, o pedir ayuda con privacidad o corrección, contactándonos en <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
+            <li>Eliminar tu cuenta desde los ajustes del Perfil en la app para solicitar la eliminación de los datos de tu cuenta de Gynus y las fotos subidas. También puedes solicitar acceso, corrección, exportación, eliminación o ayuda con privacidad en <a href="mailto:support@gynus.fit">support@gynus.fit</a></li>
           </ul>
+          <p>Eliminar tu cuenta de Gynus no cancela una suscripción de App Store o Google Play. Gestiona o cancela tu suscripción en la tienda donde la compraste.</p>
           <p>Si estás en el EEE, el Reino Unido u otra jurisdicción con derechos de privacidad similares, también puedes tener el derecho de presentar una queja ante tu autoridad local de protección de datos.</p>
           <p>Actualmente no usamos toma de decisiones automatizada ni elaboración de perfiles que produzcan efectos legales o similarmente significativos.</p>
 

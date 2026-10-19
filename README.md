@@ -7,7 +7,7 @@ Plain HTML and CSS, served by GitHub Pages from `main` at the repository root. N
 - `/`: English homepage.
 - `/pt-br/`: Brazilian Portuguese homepage and product guides.
 - `/es/`: Spanish homepage.
-- Existing `/privacy.html`, `/terms.html`, and `/accountInfo.html` stay at their original URLs. Their bodies and existing language controls are unchanged.
+- `/privacy.html`, `/terms.html`, and `/accountInfo.html` keep their original URLs and language controls. The privacy policy covers account-linked analytics, purchases, account deletion, and installation-only SKAdNetwork measurement from iOS 2.5.6 in English, Portuguese, and Spanish.
 
 Marketing pages serve their language directly in HTML. The three homepages have reciprocal language alternatives and self-canonicals. English is the `x-default`. Supporting guides currently exist only in Portuguese; their links to other languages explicitly lead to those homepages.
 
